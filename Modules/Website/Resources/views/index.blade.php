@@ -1,124 +1,1665 @@
 @extends('website::layouts.master')
+@section('title') Landing @endsection
+@section('css')
+    <link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
+@endsection
+@section('body')
+    <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+@endsection
 
 @section('content')
-    <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-        @if (Route::has('login'))
-            <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                @auth
-                    <a href="{{ route('dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                @else
-                    <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                    @endif
-                @endauth
+    <!-- Begin page -->
+    <div class="layout-wrapper landing">
+        <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="{{URL::asset('/index')}}">
+                    <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="70">
+                </a>
+                <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
+                        <li class="nav-item">
+                            <a class="nav-link fs-14 active" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" href="#features">Features</a>
+                        </li>
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link fs-14" href="#plans">Plans</a>--}}
+{{--                        </li>--}}
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+{{--                        <div class="">--}}
+{{--                            <a href="auth-signin-basic" class="btn btn-link fw-medium text-decoration-none text-dark">Sign--}}
+{{--                                in</a>--}}
+{{--                            <a href="auth-signup-basic" class="btn btn-primary">Sign Up</a>--}}
+{{--                        </div>--}}
+                </div>
+
             </div>
-        @endif
+        </nav>
+        <!-- end navbar -->
+        <div class="vertical-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent.show"></div>
 
-        <div class="max-w-7xl mx-auto p-6 lg:p-8">
-            <div class="flex justify-center">
-                <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto bg-gray-100 dark:bg-gray-900">
-                    <path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="#FF2D20"/>
-                </svg>
-            </div>
-
-            <div class="mt-16">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                    <a href="https://laravel.com/docs" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+        <!-- start hero section -->
+        <section class="section job-hero-section pb-0 p-5" id="hero">
+            <div class="container pt-5">
+                <div class="row justify-content-between align-items-center pt-5">
+                    <div class="col-lg-4 pt-4">
                         <div>
-                            <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                                </svg>
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                            </p>
+                            <h1 class="display-6 fw-semibold text-capitalize lh-base mb-0" data-aos="fade-right">SNAPBIZ</h1>
+                            <h1 class="fw-light text-capitalize mb-3" data-aos="fade-right">Business Consultant</h1>
+                            <p class="lead text-muted lh-base mb-4" data-aos="fade-left">Better System, Better Profit Better Cash Flow, Better Businesses.</p>
                         </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-                    <a href="https://laracasts.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                    <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                                </svg>
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laracasts</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                            </p>
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-                    <a href="https://laravel-news.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
-                                </svg>
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel News</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                            </p>
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-                    <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
-                                </svg>
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Forge</a>, <a href="https://vapor.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Vapor</a>, <a href="https://nova.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Nova</a>, and <a href="https://envoyer.io" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Telescope</a>, and more.
-                            </p>
+                    </div>
+                    <!--end col-->
+                    <div class="col-lg-8 pt-4">
+                        <div class="position-relative home-img text-center mt-5 mt-lg-0">
+                            <img src="{{URL::asset('build/images/job-profile3.png')}}" alt="" class="user-img" width="115%">
                         </div>
                     </div>
                 </div>
+                <!-- end row -->
             </div>
+            <!-- end container -->
+        </section>
+        <!-- end hero section -->
 
-            <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
-                <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
-                    <div class="flex items-center gap-4">
-                        <a href="https://github.com/sponsors/taylorotwell" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="-mt-px mr-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-                            Sponsor
-                        </a>
+        <!-- start client section -->
+        <div class="pt-2 mt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="text-center mt-5">
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Portofolio Audit & Accounting Service</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Under EY Public Accounting Firm</h5>
+
+                            <!-- Swiper -->
+                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto1.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto2.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto3.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto5.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto6.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto7.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                    Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                </div>
+                <!-- end row -->
             </div>
+            <!-- end container -->
         </div>
+        <!-- end client section -->
+
+        <!-- start services -->
+        <section class="section pt-5" id="services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">The Best Consultant Solution for Your Business Success</h1>
+                            <p class="text-muted">Improve Your Business Performance with Us! We are a trusted partner for your business growth. With our experience in data analysis, marketing strategy, and operational management, we will help you achieve the success you desire. Get a solution tailored to your needs</p>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row g-3">
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-pencil-ruler-2-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Accounting & Bookkeeping</h5>
+                                <p class="text-muted my-3 ff-secondary">These services include maintaining proper and accurate financial records.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-lightbulb-flash-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Planning / Financial Budgeting</h5>
+                                <p class="text-muted my-3 ff-secondary">This service focuses on careful financial planning, including preparing a financial budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-stack-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Audit Internal & SOP</h5>
+                                <p class="text-muted my-3 ff-secondary">Evaluation of the company's internal processes to ensure efficiency, compliance and good risk management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-settings-2-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Financial Statement Check & Audit.</h5>
+                                <p class="text-muted my-3 ff-secondary">This service involves examining and auditing your company's financial statements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-slideshow-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Financial Management & Internal Control Analysis</h5>
+                                <p class="text-muted my-3 ff-secondary">These services relate to corporate financial management and internal control analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-briefcase-5-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Financial, External Audit & Internal Report</h5>
+                                <p class="text-muted my-3 ff-secondary">This service includes inspection and audit of internal and external financial reports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end services -->
+
+        <!-- start features -->
+        <section class="section bg-light py-5" id="features">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6 col-sm-7 mx-auto">
+                        <div>
+                            <img src="{{ URL::asset('build/images/landing/features/img-1.png') }}" alt="" class="img-fluid mx-auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-muted">
+                            <div class="avatar-sm icon-effect mb-4">
+                                <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                    <i class="ri-collage-line fs-36"></i>
+                                </div>
+                            </div>
+                            <h3 class="mb-3 fs-20">Huge collection of widgets</h3>
+                            <p class="mb-4 ff-secondary fs-16">Collection widgets specialize in displaying many elements of the same type, such as a collection of pictures from a collection of articles from a news app or a collection of messages from a communication app.</p>
+
+                            <div class="row pt-3">
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <h4>5</h4>
+                                        <p>Dashboards</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <h4>150+</h4>
+                                        <p>Pages</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <h4>7+</h4>
+                                        <p>Functional Apps</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end features -->
+
+        <!-- start cta -->
+        <section class="py-5 bg-primary position-relative">
+            <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-sm">
+                        <div>
+                            <h4 class="text-white mb-0 fw-semibold">Grow Up Your Business With SNAPBIZ</h4>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-sm-auto">
+                        <div>
+                            <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end cta -->
+
+        <!-- start features -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="text-muted">
+                            <h5 class="fs-12 text-uppercase text-success">Design</h5>
+                            <h4 class="mb-3">Well Designed Dashboards</h4>
+                            <p class="mb-4 ff-secondary">Quality Dashboards (QD) is a condition-specific, actionable web-based application for quality reporting and population
+                                management that is integrated into the Electronic Health Record (EHR).</p>
+
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="vstack gap-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Ecommerce</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Analytics</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">CRM</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="vstack gap-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Crypto</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Projects</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="index" class="btn btn-primary">Learn More <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
+                        <div>
+                            <img src="{{ URL::asset('build/images/landing/features/img-2.png') }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row align-items-center mt-5 pt-lg-5 gy-4">
+                    <div class="col-lg-6 col-sm-7 col-10 mx-auto">
+                        <div>
+                            <img src="{{ URL::asset('build/images/landing/features/img-3.png') }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-muted ps-lg-5">
+                            <h5 class="fs-12 text-uppercase text-success">structure</h5>
+                            <h4 class="mb-3">Well Documented</h4>
+                            <p class="mb-4">used to describe something that is known about or known to be true because there are many documents that describe it,
+                                prove it, etc.</p>
+
+                            <div class="vstack gap-2">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-2">
+                                        <div class="avatar-xs icon-effect">
+                                            <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                <i class="ri-check-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="mb-0">Dynamic Conetnt</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-2">
+                                        <div class="avatar-xs icon-effect">
+                                            <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                <i class="ri-check-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="mb-0">Setup plugin's information.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-2">
+                                        <div class="avatar-xs icon-effect">
+                                            <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                <i class="ri-check-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="mb-0">Themes customization information</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end features -->
+
+{{--        <!-- start plan -->--}}
+{{--        <section class="section bg-light" id="plans">--}}
+{{--            <div class="bg-overlay bg-overlay-pattern"></div>--}}
+{{--            <div class="container">--}}
+{{--                <div class="row justify-content-center">--}}
+{{--                    <div class="col-lg-8">--}}
+{{--                        <div class="text-center mb-5">--}}
+{{--                            <h3 class="mb-3 fw-semibold">Choose the plan that's right for you</h3>--}}
+{{--                            <p class="text-muted mb-4">Simple pricing. No hidden fees. Advanced features for you--}}
+{{--                                business.</p>--}}
+
+{{--                            <div class="d-flex justify-content-center align-items-center">--}}
+{{--                                <div>--}}
+{{--                                    <h5 class="fs-14 mb-0">Month</h5>--}}
+{{--                                </div>--}}
+{{--                                <div class="form-check form-switch fs-20 ms-3 " onclick="check()">--}}
+{{--                                    <input class="form-check-input" type="checkbox" id="plan-switch">--}}
+{{--                                    <label class="form-check-label" for="plan-switch"></label>--}}
+{{--                                </div>--}}
+{{--                                <div>--}}
+{{--                                    <h5 class="fs-14 mb-0">Annual <span class="badge bg-success-subtle text-success">Save 20%</span></h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- end col -->--}}
+{{--                </div>--}}
+{{--                <!-- end row -->--}}
+
+{{--                <div class="row gy-4">--}}
+{{--                    <div class="col-lg-4">--}}
+{{--                        <div class="card plan-box mb-0">--}}
+{{--                            <div class="card-body p-4 m-2">--}}
+{{--                                <div class="d-flex align-items-center">--}}
+{{--                                    <div class="flex-grow-1">--}}
+{{--                                        <h5 class="mb-1 fw-semibold">Basic Plan</h5>--}}
+{{--                                        <p class="text-muted mb-0">For Startup</p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="avatar-sm">--}}
+{{--                                        <div class="avatar-title bg-light rounded-circle text-primary">--}}
+{{--                                            <i class="ri-book-mark-line fs-20"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="py-4 text-center">--}}
+{{--                                    <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">19</span> <span--}}
+{{--                                            class="fs-13 text-muted">/Month</span></h1>--}}
+{{--                                    <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">171</span> <span--}}
+{{--                                            class="fs-13 text-muted">/Year</span></h1>--}}
+{{--                                </div>--}}
+
+{{--                                <div>--}}
+{{--                                    <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Upto <b>3</b> Projects--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Upto <b>299</b> Customers--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Scalable Bandwidth--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>5</b> FTP Login--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-danger me-1">--}}
+{{--                                                    <i class="ri-close-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>24/7</b> Support--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-danger me-1">--}}
+{{--                                                    <i class="ri-close-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> Storage--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-danger me-1">--}}
+{{--                                                    <i class="ri-close-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Domain--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                    <div class="mt-4">--}}
+{{--                                        <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get--}}
+{{--                                            Started</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!--end col-->--}}
+{{--                    <div class="col-lg-4">--}}
+{{--                        <div class="card plan-box mb-0 ribbon-box right">--}}
+{{--                            <div class="card-body p-4 m-2">--}}
+{{--                                <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>--}}
+{{--                                <div class="d-flex align-items-center">--}}
+{{--                                    <div class="flex-grow-1">--}}
+{{--                                        <h5 class="mb-1 fw-semibold">Pro Business</h5>--}}
+{{--                                        <p class="text-muted mb-0">Professional plans</p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="avatar-sm">--}}
+{{--                                        <div class="avatar-title bg-light rounded-circle text-primary">--}}
+{{--                                            <i class="ri-medal-fill fs-20"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="py-4 text-center">--}}
+{{--                                    <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">29</span> <span--}}
+{{--                                            class="fs-13 text-muted">/Month</span></h1>--}}
+{{--                                    <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">261</span> <span--}}
+{{--                                            class="fs-13 text-muted">/Year</span></h1>--}}
+{{--                                </div>--}}
+
+{{--                                <div>--}}
+{{--                                    <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Upto <b>15</b> Projects--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> Customers--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Scalable Bandwidth--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>12</b> FTP Login--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>24/7</b> Support--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-danger me-1">--}}
+{{--                                                    <i class="ri-close-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> Storage--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-danger me-1">--}}
+{{--                                                    <i class="ri-close-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Domain--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                    <div class="mt-4">--}}
+{{--                                        <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get--}}
+{{--                                            Started</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!--end col-->--}}
+{{--                    <div class="col-lg-4">--}}
+{{--                        <div class="card plan-box mb-0">--}}
+{{--                            <div class="card-body p-4 m-2">--}}
+{{--                                <div class="d-flex align-items-center">--}}
+{{--                                    <div class="flex-grow-1">--}}
+{{--                                        <h5 class="mb-1 fw-semibold">Platinum Plan</h5>--}}
+{{--                                        <p class="text-muted mb-0">Enterprise Businesses</p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="avatar-sm">--}}
+{{--                                        <div class="avatar-title bg-light rounded-circle text-primary">--}}
+{{--                                            <i class="ri-stack-fill fs-20"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="py-4 text-center">--}}
+{{--                                    <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">39</span> <span--}}
+{{--                                            class="fs-13 text-muted">/Month</span></h1>--}}
+{{--                                    <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">351</span> <span--}}
+{{--                                            class="fs-13 text-muted">/Year</span></h1>--}}
+{{--                                </div>--}}
+
+{{--                                <div>--}}
+{{--                                    <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> Projects--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> Customers--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Scalable Bandwidth--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> FTP Login--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>24/7</b> Support--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    <b>Unlimited</b> Storage--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="d-flex">--}}
+{{--                                                <div class="flex-shrink-0 text-success me-1">--}}
+{{--                                                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="flex-grow-1">--}}
+{{--                                                    Domain--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                    <div class="mt-4">--}}
+{{--                                        <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get--}}
+{{--                                            Started</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!--end col-->--}}
+{{--                </div>--}}
+{{--                <!--end row-->--}}
+{{--            </div>--}}
+{{--            <!-- end container -->--}}
+{{--        </section>--}}
+{{--        <!-- end plan -->--}}
+
+        <!-- start faqs -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h3 class="mb-3 fw-semibold">Frequently Asked Questions</h3>
+                            <p class="text-muted mb-4 ff-secondary">If you can not find answer to your question in our FAQ, you can
+                                always contact us or email us. We will answer you shortly!</p>
+
+                            <div class="hstack gap-2 justify-content-center">
+                                <button type="button" class="btn btn-primary btn-label rounded-pill"><i class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i> Email Us</button>
+                                <button type="button" class="btn btn-info btn-label rounded-pill"><i class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></i> Send Us Tweet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row g-lg-5 g-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="flex-shrink-0 me-1">
+                                <i class="ri-question-line fs-24 align-middle text-success me-1"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="mb-0 fw-semibold">General Questions</h5>
+                            </div>
+                        </div>
+                        <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box"
+                             id="genques-accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="genques-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#genques-collapseOne" aria-expanded="true"
+                                            aria-controls="genques-collapseOne">
+                                        What is the purpose of using themes ?
+                                    </button>
+                                </h2>
+                                <div id="genques-collapseOne" class="accordion-collapse collapse show"
+                                     aria-labelledby="genques-headingOne" data-bs-parent="#genques-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        A theme is a set of colors, fonts, effects, and more that can be applied to your entire presentation to give it a
+                                        consistent, professional look. You've already been using a theme, even if you didn't know it: the default Office theme,
+                                        which consists.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="genques-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#genques-collapseTwo" aria-expanded="false"
+                                            aria-controls="genques-collapseTwo">
+                                        Can a theme have more than one theme?
+                                    </button>
+                                </h2>
+                                <div id="genques-collapseTwo" class="accordion-collapse collapse"
+                                     aria-labelledby="genques-headingTwo" data-bs-parent="#genques-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        A story can have as many themes as the reader can identify based on recurring patterns and parallels within the story
+                                        itself. In looking at ways to separate themes into a hierarchy, we might find it useful to follow the example of a
+                                        single book.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="genques-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#genques-collapseThree" aria-expanded="false"
+                                            aria-controls="genques-collapseThree">
+                                        What are theme features?
+                                    </button>
+                                </h2>
+                                <div id="genques-collapseThree" class="accordion-collapse collapse"
+                                     aria-labelledby="genques-headingThree" data-bs-parent="#genques-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        Theme features is a set of specific functionality that may be enabled by theme authors. Themes must register each
+                                        individual Theme Feature that the author wishes to support. Theme support functions should be called in the theme's
+                                        functions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="genques-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#genques-collapseFour" aria-expanded="false"
+                                            aria-controls="genques-collapseFour">
+                                        What is simple theme?
+                                    </button>
+                                </h2>
+                                <div id="genques-collapseFour" class="accordion-collapse collapse"
+                                     aria-labelledby="genques-headingFour" data-bs-parent="#genques-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        Simple is a free WordPress theme, by Themify, built exactly what it is named for: simplicity. Immediately upgrade the
+                                        quality of your WordPress site with the simple theme To use the built-in Chrome theme editor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end accordion-->
+
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="flex-shrink-0 me-1">
+                                <i class="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="mb-0 fw-semibold">Privacy &amp; Security</h5>
+                            </div>
+                        </div>
+
+                        <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box"
+                             id="privacy-accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="privacy-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#privacy-collapseOne" aria-expanded="false"
+                                            aria-controls="privacy-collapseOne">
+                                        Does Word have night mode?
+                                    </button>
+                                </h2>
+                                <div id="privacy-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="privacy-headingOne" data-bs-parent="#privacy-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        You can run Microsoft Word in dark mode, which uses a dark color palette to help reduce eye strain in low light
+                                        settings. You can choose to make the document white or black using the Switch Modes button in the ribbon's View tab.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="privacy-headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#privacy-collapseTwo" aria-expanded="true"
+                                            aria-controls="privacy-collapseTwo">
+                                        Is theme an opinion?
+                                    </button>
+                                </h2>
+                                <div id="privacy-collapseTwo" class="accordion-collapse collapse show"
+                                     aria-labelledby="privacy-headingTwo" data-bs-parent="#privacy-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        A theme is an opinion the author expresses on the subject, for instance, the author's dissatisfaction with the narrow
+                                        confines of French bourgeois marriage during that period theme is an idea that a writer repeats.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="privacy-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#privacy-collapseThree" aria-expanded="false"
+                                            aria-controls="privacy-collapseThree">
+                                        How do you develop a theme?
+                                    </button>
+                                </h2>
+                                <div id="privacy-collapseThree" class="accordion-collapse collapse"
+                                     aria-labelledby="privacy-headingThree" data-bs-parent="#privacy-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        A short story, novella, or novel presents a narrative to its reader. Perhaps that narrative involves mystery, terror,
+                                        romance, comedy, or all of the above. These works of fiction may also contain memorable characters, vivid
+                                        world-building, literary devices.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="privacy-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#privacy-collapseFour" aria-expanded="false"
+                                            aria-controls="privacy-collapseFour">
+                                        Do stories need themes?
+                                    </button>
+                                </h2>
+                                <div id="privacy-collapseFour" class="accordion-collapse collapse"
+                                     aria-labelledby="privacy-headingFour" data-bs-parent="#privacy-accordion">
+                                    <div class="accordion-body ff-secondary">
+                                        A story can have as many themes as the reader can identify based on recurring patterns and parallels within the story
+                                        itself. In looking at ways to separate themes into a hierarchy, we might find it useful to follow the example of a
+                                        single book.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end accordion-->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end faqs -->
+
+        <!-- start review -->
+        <section class="section bg-primary" id="reviews">
+            <div class="bg-overlay bg-overlay-pattern"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="text-center">
+                            <div>
+                                <i class="ri-double-quotes-l text-success display-3"></i>
+                            </div>
+                            <h4 class="text-white mb-5"><span class="text-success">19k</span>+ Satisfied clients</h4>
+
+                            <!-- Swiper -->
+                            <div class="swiper client-review-swiper rounded" dir="ltr">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row justify-content-center">
+                                            <div class="col-10">
+                                                <div class="text-white-50">
+                                                    <p class="fs-20 ff-secondary mb-4">" I am givng 5 stars. Theme is great and everyone one stuff everything in theme. Future request should not affect current
+                                                        state of theme. "</p>
+
+                                                    <div>
+                                                        <h5 class="text-white">gregoriusus</h5>
+                                                        <p>- Skote User</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide -->
+                                    <div class="swiper-slide">
+                                        <div class="row justify-content-center">
+                                            <div class="col-10">
+                                                <div class="text-white-50">
+                                                    <p class="fs-20 ff-secondary mb-4">" Awesome support. Had few issues while setting up because of my device, the support team helped me fix them up in a day.
+                                                        Everything looks clean and good. Highly recommended! "</p>
+
+                                                    <div>
+                                                        <h5 class="text-white">GeekyGreenOwl</h5>
+                                                        <p>- Skote User</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide -->
+                                    <div class="swiper-slide">
+                                        <div class="row justify-content-center">
+                                            <div class="col-10">
+                                                <div class="text-white-50">
+                                                    <p class="fs-20 ff-secondary mb-4">" Amazing template, Redux store and components is nicely designed.
+                                                        It's a great start point for an admin based project. Clean Code and good documentation. Template is
+                                                        completely in React and absolutely no usage of jQuery "</p>
+
+                                                    <div>
+                                                        <h5 class="text-white">sreeks456</h5>
+                                                        <p>- Veltrix User</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide -->
+                                </div>
+                                <div class="swiper-button-next bg-white rounded-circle"></div>
+                                <div class="swiper-button-prev bg-white rounded-circle"></div>
+                                <div class="swiper-pagination position-relative mt-2"></div>
+                            </div>
+                            <!-- end slider -->
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end review -->
+
+        <!-- start counter -->
+        <section class="py-5 position-relative bg-light">
+            <div class="container">
+                <div class="row text-center gy-4">
+                    <div class="col-lg-3 col-6">
+                        <div>
+                            <h2 class="mb-2"><span class="counter-value" data-target="100">0</span>+</h2>
+                            <div class="text-muted">Projects Completed</div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-3 col-6">
+                        <div>
+                            <h2 class="mb-2"><span class="counter-value" data-target="24">0</span></h2>
+                            <div class="text-muted">Win Awards</div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-3 col-6">
+                        <div>
+                            <h2 class="mb-2"><span class="counter-value" data-target="20.3">0</span>k</h2>
+                            <div class="text-muted">Satisfied Clients</div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-3 col-6">
+                        <div>
+                            <h2 class="mb-2"><span class="counter-value" data-target="50">0</span></h2>
+                            <div class="text-muted">Employees</div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end counter -->
+
+        <!-- start Work Process -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h3 class="mb-3 fw-semibold">Our Work Process</h3>
+                            <p class="text-muted mb-4 ff-secondary">In an ideal world this website wouldn’t exist, a client would
+                                acknowledge the importance of having web copy before the Proin vitae ipsum vel ex
+                                finibus semper design starts.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row text-center">
+                    <div class="col-lg-4">
+                        <div class="process-card mt-4">
+                            <div class="process-arrow-img d-none d-lg-block">
+                                <img src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="avatar-sm icon-effect mx-auto mb-4">
+                                <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                    <i class="ri-quill-pen-line"></i>
+                                </div>
+                            </div>
+
+                            <h5>Tell us what you need</h5>
+                            <p class="text-muted ff-secondary">The profession and the employer and your desire to make your mark.</p>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="process-card mt-4">
+                            <div class="process-arrow-img d-none d-lg-block">
+                                <img src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="avatar-sm icon-effect mx-auto mb-4">
+                                <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                    <i class="ri-user-follow-line"></i>
+                                </div>
+                            </div>
+
+                            <h5>Get free quotes</h5>
+                            <p class="text-muted ff-secondary">The most important aspect of beauty was, therefore, an inherent part.</p>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="process-card mt-4">
+                            <div class="avatar-sm icon-effect mx-auto mb-4">
+                                <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                    <i class="ri-book-mark-line"></i>
+                                </div>
+                            </div>
+
+                            <h5>Deliver high quality product</h5>
+                            <p class="text-muted ff-secondary">We quickly learn to fear and thus automatically avoid potentially.</p>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end Work Process -->
+
+        <!-- start team -->
+        <section class="section bg-light" id="team">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h3 class="mb-3 fw-semibold">Our <span class="text-danger">Team</span></h3>
+                            <p class="text-muted mb-4 ff-secondary">To achieve this, it would be necessary to have uniform grammar,
+                                pronunciation and more common words. If several languages coalesce the grammar.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Nancy Martino</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">Team Leader</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Henry Baird</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Frank Hook</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">Project Manager</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Donald Palmer</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Erica Kernan</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">Web Designer</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Alexis Clarke</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">Backend Developer</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Marie Ward</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-xl mx-auto mb-4 position-relative">
+                                    <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt="" class="img-fluid rounded-circle">
+                                    <a href="apps-mailbox"
+                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                                        <div class="avatar-title bg-transparent">
+                                            <i class="ri-mail-fill align-bottom"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end card body -->
+                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Jack Gough</a></h5>
+                                <p class="text-muted mb-0 ff-secondary">React Js Developer</p>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mt-2">
+                            <a href="pages-team" class="btn btn-primary">View All Members <i
+                                    class="ri-arrow-right-line ms-1 align-bottom"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end team -->
+
+        <!-- start contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h3 class="mb-3 fw-semibold">Get In Touch</h3>
+                            <p class="text-muted mb-4 ff-secondary">We thrive when coming up with innovative ideas but also
+                                understand that a smart concept should be supported with faucibus sapien odio measurable
+                                results.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="mt-4">
+                                <h5 class="fs-13 text-muted text-uppercase">Office Address 1:</h5>
+                                <div class="ff-secondary fw-semibold">4461 Cedar Street Moro, <br/>AR 72368</div>
+                            </div>
+                            <div class="mt-4">
+                                <h5 class="fs-13 text-muted text-uppercase">Office Address 2:</h5>
+                                <div class="ff-secondary fw-semibold">2467 Swick Hill Street <br />New Orleans, LA</div>
+                            </div>
+                            <div class="mt-4">
+                                <h5 class="fs-13 text-muted text-uppercase">Working Hours:</h5>
+                                <div class="ff-secondary fw-semibold">9:00am to 6:00pm</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-8">
+                        <div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="name" class="form-label fs-13">Name</label>
+                                            <input name="name" id="name" type="text"
+                                                   class="form-control bg-light border-light" placeholder="Your name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="email" class="form-label fs-13">Email</label>
+                                            <input name="email" id="email" type="email"
+                                                   class="form-control bg-light border-light" placeholder="Your email*">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-4">
+                                            <label for="subject" class="form-label fs-13">Subject</label>
+                                            <input type="text" class="form-control bg-light border-light" id="subject"
+                                                   name="subject" placeholder="Your Subject.." />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="comments" class="form-label fs-13">Message</label>
+                                            <textarea name="comments" id="comments" rows="3"
+                                                      class="form-control bg-light border-light"
+                                                      placeholder="Your message..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-end">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary"
+                                               value="Send Message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end contact -->
+
+        <!-- start cta -->
+        <section class="py-5 bg-primary position-relative">
+            <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-sm">
+                        <div>
+                            <h4 class="text-white mb-0 fw-semibold">Build your web App/SaaS with Velzon dashboard</h4>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-sm-auto">
+                        <div>
+                            <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-shopping-cart-2-line align-middle me-1"></i> Buy Now</a>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end cta -->
+
+        <!-- Start footer -->
+        <footer class="custom-footer bg-dark py-5 position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div>
+                            <div>
+                                <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="logo light" height="17">
+                            </div>
+                            <div class= mt-4 fs-13">
+                            <p>Premium Multipurpose Admin & Dashboard Template</p>
+                            <p class="ff-secondary">You can build any type of web application like eCommerce, CRM, CMS, Project
+                                management apps, Admin Panels, etc using Velzon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ms-lg-auto">
+                    <div class="row">
+                        <div class="col-sm-4 mt-4">
+                            <h5 class="text-white mb-0">Company</h5>
+                            <div class="text-muted mt-3">
+                                <ul class="list-unstyled ff-secondary footer-list fs-14">
+                                    <li><a href="pages-profile">About Us</a></li>
+                                    <li><a href="pages-gallery">Gallery</a></li>
+                                    <li><a href="apps-projects-overview">Projects</a></li>
+                                    <li><a href="pages-timeline">Timeline</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt-4">
+                            <h5 class="text-white mb-0">Apps Pages</h5>
+                            <div class="text-muted mt-3">
+                                <ul class="list-unstyled ff-secondary footer-list fs-14">
+                                    <li><a href="pages-pricing">Calendar</a></li>
+                                    <li><a href="apps-mailbox">Mailbox</a></li>
+                                    <li><a href="apps-chat">Chat</a></li>
+                                    <li><a href="apps-crm-deals">Deals</a></li>
+                                    <li><a href="apps-tasks-kanban">Kanban Board</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt-4">
+                            <h5 class="text-white mb-0">Support</h5>
+                            <div class="text-muted mt-3">
+                                <ul class="list-unstyled ff-secondary footer-list fs-14">
+                                    <li><a href="pages-faqs">FAQ</a></li>
+                                    <li><a href="pages-faqs">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row text-center text-sm-start align-items-center mt-5">
+                <div class="col-sm-6">
+
+                    <div>
+                        <p class="copy-rights mb-0">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Velzon - Themesbrand
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end mt-3 mt-sm-0">
+                        <ul class="list-inline mb-0 footer-social-link">
+                            <li class="list-inline-item">
+                                <a href="javascript: void(0);" class="avatar-xs d-block">
+                                    <div class="avatar-title rounded-circle">
+                                        <i class="ri-facebook-fill"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript: void(0);" class="avatar-xs d-block">
+                                    <div class="avatar-title rounded-circle">
+                                        <i class="ri-github-fill"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript: void(0);" class="avatar-xs d-block">
+                                    <div class="avatar-title rounded-circle">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript: void(0);" class="avatar-xs d-block">
+                                    <div class="avatar-title rounded-circle">
+                                        <i class="ri-google-fill"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript: void(0);" class="avatar-xs d-block">
+                                    <div class="avatar-title rounded-circle">
+                                        <i class="ri-dribbble-line"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </div>
+    </footer>
+    <!-- end footer -->
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-info btn-icon landing-back-top" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    </div>
+    <!-- end layout wrapper -->
+
+
+@endsection
+    @section('script')
+        <script src="{{ URL::asset('build/libs/swiper/swiper-bundle.min.js') }}"></script>
+        <script src="{{ URL::asset('build/js/pages/landing.init.js') }}"></script>
 @endsection
