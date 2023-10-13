@@ -928,7 +928,7 @@
 
                 <div class="col-lg-7 ms-lg-auto">
                     <div class="row">
-                        <div class="col-sm-4 mt-4 ">
+                        <div class="col-sm-4 mt-4">
                             <h5 class="text-dark mb-0">Company</h5>
                             <div class="text-muted mt-3">
                                 <ul class="list-unstyled ff-secondary footer-list fs-14">
