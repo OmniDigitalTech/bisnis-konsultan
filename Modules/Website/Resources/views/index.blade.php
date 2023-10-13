@@ -919,10 +919,9 @@
                             <div>
                                 <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" alt="logo light" height="70">
                             </div>
-                            <div class= mt-4 fs-13">
-                            <p>Premium Multipurpose Admin & Dashboard Template</p>
-                            <p class="ff-secondary">You can build any type of web application like eCommerce, CRM, CMS, Project
-                                management apps, Admin Panels, etc using Velzon.</p>
+                            <div class="mt-4 fs-13">
+                            <p>World Best Consultant</p>
+                            <p class="ff-secondary">Collaborate & develop the company with detailed & comprehensive organizational attention, working with your team / employees to optimize the company's systems and finances in ways that are proven to be successful.</p>
                         </div>
                     </div>
                 </div>
