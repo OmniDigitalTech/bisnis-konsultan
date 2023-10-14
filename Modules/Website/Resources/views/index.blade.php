@@ -378,7 +378,7 @@
         <!-- end features -->
 
         <!-- start cta -->
-        <section class="py-5 bg-primary position-relative">
+        <section class="py-5 position-relative" style="background-color: #19587d">
             <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
             <div class="container">
                 <div class="row align-items-center gy-4">
@@ -390,7 +390,7 @@
                     <!-- end col -->
                     <div class="col-sm-auto">
                         <div>
-                            <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
+                            <a href="#" target="_blank" class="btn bg-gradient btn-warning"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
                         </div>
                     </div>
                     <!-- end col -->
@@ -733,60 +733,59 @@
         <footer class="custom-footer bg-white py-5 position-relative text-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 mt-4">
+                    <div class="col-lg-12 mt-0 text-center">
                         <div>
                             <div>
-                                <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" alt="logo light" height="70">
+                                <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" alt="logo light" height="100">
                             </div>
                             <div class="mt-4 fs-13">
-                            <p>World Best Consultant</p>
-                            <p class="ff-secondary">Collaborate & develop the company with detailed & comprehensive organizational attention, working with your team / employees to optimize the company's systems and finances in ways that are proven to be successful.</p>
+                            <h3>World Best Consultant</h3>
+                            <h5 class="ff-secondary">Collaborate & develop the company with detailed & comprehensive organizational attention, working with your team / employees to optimize the company's systems and finances in ways that are proven to be successful.</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-7 ms-lg-auto">
-                    <div class="row">
-                        <div class="col-sm-4 mt-4">
-                            <h5 class="text-dark mb-0">Company</h5>
-                            <div class="text-muted mt-3">
-                                <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                    <li><a href="pages-profile" style="color: black;">About Us</a></li>
-                                    <li><a href="pages-gallery" style="color: black;">Gallery</a></li>
-                                    <li><a href="apps-projects-overview" style="color: black;">Projects</a></li>
-                                    <li><a href="pages-timeline" style="color: black;">Timeline</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 mt-4">
-                            <h5 class="text-dark mb-0">Apps Pages</h5>
-                            <div class="text-muted mt-3">
-                                <ul class="list-unstyled ff-secondary footer-list fs-14 text-dark">
-                                    <li><a href="pages-pricing" style="color: black;">Calendar</a></li>
-                                    <li><a href="apps-mailbox" style="color: black;">Mailbox</a></li>
-                                    <li><a href="apps-chat" style="color: black;">Chat</a></li>
-                                    <li><a href="apps-crm-deals" style="color: black;">Deals</a></li>
-                                    <li><a href="apps-tasks-kanban" style="color: black;">Kanban Board</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 mt-4">
-                            <h5 class="text-dark mb-0">Support</h5>
-                            <div class="text-muted mt-3">
-                                <ul class="list-unstyled ff-secondary footer-list fs-14 text-dark">
-                                    <li><a href="pages-faqs" style="color: black;">FAQ</a></li>
-                                    <li><a href="pages-faqs" style="color: black;">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-7 ms-lg-auto">--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col-sm-4 mt-4">--}}
+{{--                            <h5 class="text-dark mb-0">Company</h5>--}}
+{{--                            <div class="text-muted mt-3">--}}
+{{--                                <ul class="list-unstyled ff-secondary footer-list fs-14">--}}
+{{--                                    <li><a href="pages-profile" style="color: black;">About Us</a></li>--}}
+{{--                                    <li><a href="pages-gallery" style="color: black;">Gallery</a></li>--}}
+{{--                                    <li><a href="apps-projects-overview" style="color: black;">Projects</a></li>--}}
+{{--                                    <li><a href="pages-timeline" style="color: black;">Timeline</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-4 mt-4">--}}
+{{--                            <h5 class="text-dark mb-0">Apps Pages</h5>--}}
+{{--                            <div class="text-muted mt-3">--}}
+{{--                                <ul class="list-unstyled ff-secondary footer-list fs-14 text-dark">--}}
+{{--                                    <li><a href="pages-pricing" style="color: black;">Calendar</a></li>--}}
+{{--                                    <li><a href="apps-mailbox" style="color: black;">Mailbox</a></li>--}}
+{{--                                    <li><a href="apps-chat" style="color: black;">Chat</a></li>--}}
+{{--                                    <li><a href="apps-crm-deals" style="color: black;">Deals</a></li>--}}
+{{--                                    <li><a href="apps-tasks-kanban" style="color: black;">Kanban Board</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-4 mt-4">--}}
+{{--                            <h5 class="text-dark mb-0">Support</h5>--}}
+{{--                            <div class="text-muted mt-3">--}}
+{{--                                <ul class="list-unstyled ff-secondary footer-list fs-14 text-dark">--}}
+{{--                                    <li><a href="pages-faqs" style="color: black;">FAQ</a></li>--}}
+{{--                                    <li><a href="pages-faqs" style="color: black;">Contact</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
             </div>
 
             <div class="row text-center text-sm-start align-items-center mt-5">
-                <div class="col-sm-6">
-
+                <div class="col-sm-12 text-center">
                     <div>
                         <p class="copy-rights mb-0">
                             <script>
@@ -795,47 +794,47 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end mt-3 mt-sm-0">
-                        <ul class="list-inline mb-0 footer-social-link">
-                            <li class="list-inline-item">
-                                <a href="javascript: void(0);" class="avatar-xs d-block">
-                                    <div class="avatar-title rounded-circle">
-                                        <i class="ri-facebook-fill"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="javascript: void(0);" class="avatar-xs d-block">
-                                    <div class="avatar-title rounded-circle">
-                                        <i class="ri-github-fill"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="javascript: void(0);" class="avatar-xs d-block">
-                                    <div class="avatar-title rounded-circle">
-                                        <i class="ri-linkedin-fill"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="javascript: void(0);" class="avatar-xs d-block">
-                                    <div class="avatar-title rounded-circle">
-                                        <i class="ri-google-fill"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="javascript: void(0);" class="avatar-xs d-block">
-                                    <div class="avatar-title rounded-circle">
-                                        <i class="ri-dribbble-line"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+{{--                <div class="col-sm-6">--}}
+{{--                    <div class="text-sm-end mt-3 mt-sm-0">--}}
+{{--                        <ul class="list-inline mb-0 footer-social-link">--}}
+{{--                            <li class="list-inline-item">--}}
+{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                    <div class="avatar-title rounded-circle">--}}
+{{--                                        <i class="ri-facebook-fill"></i>--}}
+{{--                                    </div>--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li class="list-inline-item">--}}
+{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                    <div class="avatar-title rounded-circle">--}}
+{{--                                        <i class="ri-github-fill"></i>--}}
+{{--                                    </div>--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li class="list-inline-item">--}}
+{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                    <div class="avatar-title rounded-circle">--}}
+{{--                                        <i class="ri-linkedin-fill"></i>--}}
+{{--                                    </div>--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li class="list-inline-item">--}}
+{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                    <div class="avatar-title rounded-circle">--}}
+{{--                                        <i class="ri-google-fill"></i>--}}
+{{--                                    </div>--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li class="list-inline-item">--}}
+{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                    <div class="avatar-title rounded-circle">--}}
+{{--                                        <i class="ri-dribbble-line"></i>--}}
+{{--                                    </div>--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
     </div>
     </footer>
