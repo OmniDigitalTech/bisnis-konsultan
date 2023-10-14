@@ -1,5 +1,5 @@
 @extends('website::layouts.master')
-@section('title') Landing @endsection
+@section('title') SNAPBIZ Business Consultant @endsection
 @section('css')
     <link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
@@ -32,9 +32,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-14" href="#features">Experience & Collaboration</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-14" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-14" href="#contact">Contact</a>
@@ -126,6 +123,12 @@
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +161,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-pencil-ruler-2-line fs-36"></i>
+                                        <i class="ri-pencil-ruler-2-line fs-36" style="color: #fedf47"></i>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +177,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-lightbulb-flash-line fs-36"></i>
+                                        <i class="ri-lightbulb-flash-line fs-36" style="color: #fedf47"></i>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +193,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-stack-line fs-36"></i>
+                                        <i class="ri-stack-line fs-36" style="color: #fedf47"></i>
                                     </div>
                                 </div>
                             </div>
@@ -205,8 +208,8 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-settings-2-line fs-36"></i>
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                        <i class="ri-settings-2-line fs-36" style="color: #fedf47"></i>
                                     </div>
                                 </div>
                             </div>
@@ -221,8 +224,8 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-slideshow-line fs-36"></i>
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                        <i class="ri-slideshow-line fs-36" style="color: #fedf47"></i>
                                     </div>
                                 </div>
                             </div>
@@ -237,8 +240,8 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-briefcase-5-line fs-36"></i>
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                        <i class="ri-briefcase-5-line fs-36" style="color: #fedf47"></i>
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +264,7 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <div class="text-center mt-5">
+                        <div class="text-center mt-2">
                             <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Clients</h5>
                             <h5 class="fs-20" data-aos="fade-down">Total more than 50 Clients</h5>
 
@@ -339,7 +342,7 @@
                         <div class="text-muted">
                             <div class="avatar-sm icon-effect mb-4">
                                 <div class="avatar-title bg-transparent rounded-circle text-success h1">
-                                    <i class="ri-star-fill fs-36"></i>
+                                    <i class="ri-star-fill fs-36" style="color: #fedf47"></i>
                                 </div>
                             </div>
                             <h3 class="mb-3 fs-20">Experience & Collaboration</h3>
@@ -404,7 +407,7 @@
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="text-muted">
-                            <h5 class="fs-12 text-uppercase text-success">System</h5>
+                            <h5 class="fs-12 text-uppercase" style="color: #fedf47">System</h5>
                             <h4 class="mb-3">Accounting Experience</h4>
                             <p class="mb-4 ff-secondary">Structured process and set of procedures used by organizations to manage their financial data, transactions, and information.</p>
 
@@ -416,7 +419,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill"></i>
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -429,7 +432,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill"></i>
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -442,7 +445,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill"></i>
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -459,7 +462,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill"></i>
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -472,7 +475,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill"></i>
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -502,7 +505,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="text-muted ps-lg-5">
-                            <h5 class="fs-12 text-uppercase text-success">Structure</h5>
+                            <h5 class="fs-12 text-uppercase" style="color: #fedf47">Structure</h5>
                             <h4 class="mb-3">Well Documented</h4>
                             <p class="mb-4">Used to describe something that is known about or known to be true because there are many documents that describe it,
                                 prove it, etc.</p>
@@ -512,7 +515,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill"></i>
+                                                <i class="ri-check-fill" style="color: #fedf47"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -524,7 +527,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill"></i>
+                                                <i class="ri-check-fill" style="color: #fedf47"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -536,7 +539,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill"></i>
+                                                <i class="ri-check-fill" style="color: #fedf47"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -548,7 +551,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill"></i>
+                                                <i class="ri-check-fill" style="color: #fedf47"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -634,7 +637,7 @@
                             </div>
                             <div class="avatar-sm icon-effect mx-auto mb-4">
                                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                    <i class="ri-quill-pen-line"></i>
+                                    <i class="ri-quill-pen-line" style="color: #fedf47"></i>
                                 </div>
                             </div>
 
@@ -650,7 +653,7 @@
                             </div>
                             <div class="avatar-sm icon-effect mx-auto mb-4">
                                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                    <i class="ri-user-follow-line"></i>
+                                    <i class="ri-user-follow-line" style="color: #fedf47"></i>
                                 </div>
                             </div>
 
@@ -663,7 +666,7 @@
                         <div class="process-card mt-4">
                             <div class="avatar-sm icon-effect mx-auto mb-4">
                                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                    <i class="ri-book-mark-line"></i>
+                                    <i class="ri-book-mark-line" style="color: #fedf47"></i>
                                 </div>
                             </div>
 
@@ -678,190 +681,6 @@
             <!-- end container -->
         </section>
         <!-- end Work Process -->
-
-        <!-- start team -->
-        <section class="section bg-light" id="team">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="text-center mb-5">
-                            <h3 class="mb-3 fw-semibold">Our <span class="text-danger">Team</span></h3>
-                            <p class="text-muted mb-4 ff-secondary">Best Business Consultant with Best Consultant Team</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end row -->
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Nancy Martino</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Henry Baird</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Frank Hook</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Donald Palmer</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                </div>
-                <!-- end row -->
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Erica Kernan</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Alexis Clarke</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Marie Ward</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body text-center p-4">
-                                <div class="avatar-xl mx-auto mb-4 position-relative">
-                                    <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                    <a href="apps-mailbox"
-                                       class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                        <div class="avatar-title bg-transparent">
-                                            <i class="ri-mail-fill align-bottom"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- end card body -->
-                                <h5 class="mb-1"><a href="pages-profile" class="text-body">Jack Gough</a></h5>
-                                <p class="text-muted mb-0 ff-secondary">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-                    <!-- end col -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- end team -->
 
         <!-- start contact -->
         <section class="section" id="contact">
