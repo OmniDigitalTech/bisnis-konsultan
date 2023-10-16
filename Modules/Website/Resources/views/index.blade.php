@@ -68,78 +68,52 @@
         </section>
         <!-- end hero section -->
 
-        <!-- start client section -->
-        <div class="pt-2">
+        <!-- our partner -->
+        <div class="mb-0 mt-0 bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-
                         <div class="text-center mt-5">
-                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Portofolio Audit & Accounting Service</h5>
-                            <h5 class="fs-20" data-aos="fade-down">Under EY Public Accounting Firm</h5>
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Partners</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Tax, Training, VC, KTB UKM</h5>
 
                             <!-- Swiper -->
                             <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto1.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/partners/partner1.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto2.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/partners/partner2.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto3.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/partners/partner3.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto5.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto6.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto7.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/partners/partner4.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!-- end row -->
             </div>
             <!-- end container -->
         </div>
-        <!-- end client section -->
+        <!-- end our partner -->
 
         <!-- start services -->
         <section class="section pt-5" id="services">
@@ -259,155 +233,13 @@
         </section>
         <!-- end services -->
 
-        <div class="pb-5 mt-0 pt-0">
-            <div class="container pb-5">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="text-center mt-2">
-                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Clients</h5>
-                            <h5 class="fs-20" data-aos="fade-down">Total more than 50 Clients</h5>
-
-                            <!-- Swiper -->
-                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client1.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client2.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client3.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client4.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client5.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client6.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client7.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client8.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </div>
-
-        <!-- start features -->
-        <section class="section bg-light py-5" id="features">
-            <div class="container">
-                <div class="row align-items-center gy-4">
-                    <div class="col-lg-6 col-sm-7 mx-auto">
-                        <div>
-                            <img src="{{ URL::asset('build/images/landing/features/img-4.png') }}" alt="" class="img-fluid mx-auto">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="text-muted">
-                            <div class="avatar-sm icon-effect mb-4">
-                                <div class="avatar-title bg-transparent rounded-circle text-success h1">
-                                    <i class="ri-star-fill fs-36" style="color: #fedf47"></i>
-                                </div>
-                            </div>
-                            <h3 class="mb-3 fs-20">Experience & Collaboration</h3>
-                            <p class="mb-4 ff-secondary fs-16">Pengalaman kami menangani audit eksternal dan internal serta menyiapkan laporan keuangan untuk berbagai jenis perusahaan, mulai dari perbankan, sekuritas, ritel, transportasi, logistik, perdagangan, manufaktur, jasa dan lain-lain.</p>
-                            <div class="row pt-3">
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <h4>10+</h4>
-                                        <p>Year Experience</p>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text-center">
-                                        <h4>50+</h4>
-                                        <p>Clients</p>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="text-center">
-                                        <h4>10</h4>
-                                        <p>Partners & Audit</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- end features -->
-
-        <!-- start cta -->
-        <section class="py-5 position-relative" style="background-color: #19587d">
-            <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
-            <div class="container">
-                <div class="row align-items-center gy-4">
-                    <div class="col-sm">
-                        <div>
-                            <h4 class="text-white mb-0 fw-semibold">Grow Up Your Business With SNAPBIZ</h4>
-                        </div>
-                    </div>
-                    <!-- end col -->
-                    <div class="col-sm-auto">
-                        <div>
-                            <a href="#" target="_blank" class="btn bg-gradient btn-warning"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
-                        </div>
-                    </div>
-                    <!-- end col -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- end cta -->
-
         <!-- start features -->
         <section class="section">
             <div class="container">
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="text-muted">
-                            <h5 class="fs-12 text-uppercase" style="color: #fedf47">System</h5>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">System</h5>
                             <h4 class="mb-3">Accounting Experience</h4>
                             <p class="mb-4 ff-secondary">Proses terstruktur dan serangkaian prosedur yang digunakan oleh organisasi untuk mengelola data, transaksi, dan informasi keuangan mereka.</p>
 
@@ -505,7 +337,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="text-muted ps-lg-5">
-                            <h5 class="fs-12 text-uppercase" style="color: #fedf47">Structure</h5>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Structure</h5>
                             <h4 class="mb-3">Well Documented</h4>
                             <p class="mb-4">Digunakan untuk menggambarkan sesuatu yang diketahui atau diketahui kebenarannya karena banyak dokumen yang menjelaskannya, buktikan, dll.</p>
 
@@ -569,54 +401,105 @@
         </section>
         <!-- end features -->
 
-        <div class="mb-0 mt-0">
-            <div class="container pb-5">
+        <!-- start client section -->
+        <div class="pb-4 ">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
 
                         <div class="text-center mt-5">
-                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Partners</h5>
-                            <h5 class="fs-20" data-aos="fade-down">Tax, Training, VC, KTB UKM</h5>
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Portofolio Audit & Accounting Service</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Under EY Public Accounting Firm</h5>
 
                             <!-- Swiper -->
                             <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/partners/partner1.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto1.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/partners/partner2.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto2.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/partners/partner3.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto3.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/partners/partner4.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto5.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto6.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto7.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <!-- end row -->
             </div>
             <!-- end container -->
         </div>
+        <!-- end client section -->
+
+        <!-- start cta -->
+        <section class="py-5 position-relative" style="background-color: #013556 !important; ">
+            <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-sm">
+                        <div>
+                            <h4 class="text-white mb-0 fw-semibold">Grow Up Your Business With SNAPBIZ</h4>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-sm-auto">
+                        <div>
+                            <a href="#" target="_blank" class="btn bg-gradient btn-warning"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end cta -->
 
         <!-- start Work Process -->
-        <section class="section">
+        <section class="section pb-0">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -681,41 +564,115 @@
         </section>
         <!-- end Work Process -->
 
-        <!-- start contact -->
-        <section class="section" id="contact">
+        <!-- start features -->
+        <section class="section py-5" id="features">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="text-center mb-5">
-                            <h3 class="mb-3 fw-semibold">Get In Touch</h3>
-                            <p class="text-muted mb-4 ff-secondary">Kami berkembang ketika memunculkan ide-ide inovatif, tetapi juga memahami bahwa konsep yang cerdas harus didukung dengan faucibus sapien odio yang terukur hasil.</p>
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6 col-sm-7 mx-auto">
+                        <div>
+                            <img src="{{ URL::asset('build/images/landing/features/img-4.png') }}" alt="" class="img-fluid mx-auto">
                         </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="text-muted">
+                            <div class="avatar-sm icon-effect mb-4">
+                                <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                    <i class="ri-star-fill fs-36" style="color: #fedf47"></i>
+                                </div>
+                            </div>
+                            <h3 class="mb-3 fs-20">Experience & Collaboration</h3>
+                            <p class="mb-4 ff-secondary fs-16">Pengalaman kami menangani audit eksternal dan internal serta menyiapkan laporan keuangan untuk berbagai jenis perusahaan, mulai dari perbankan, sekuritas, ritel, transportasi, logistik, perdagangan, manufaktur, jasa dan lain-lain.</p>
+                            <div class="row pt-3">
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <h4>10+</h4>
+                                        <p>Year Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <h4>50+</h4>
+                                        <p>Clients</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <h4>10</h4>
+                                        <p>Partners & Audit</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
                 </div>
                 <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end features -->
 
-                <div class="row gy-4">
-                    <div class="col-lg-4 text-center">
-                        <div>
-                            <div class="mt-4">
-                                <h5 class="fs-13 text-muted text-uppercase">Phone:</h5>
-                                <div class="ff-secondary fw-semibold">0811 843 1989</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div>
-                            <div class="mt-4">
-                                <h5 class="fs-13 text-muted text-uppercase">Email:</h5>
-                                <div class="ff-secondary fw-semibold">consultingsnapbiz@gmail. com</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div>
-                            <div class="mt-4">
-                                <h5 class="fs-13 text-muted text-uppercase">Working Hours:</h5>
-                                <div class="ff-secondary fw-semibold">9:00am to 6:00pm</div>
+        <!-- start clients -->
+        <div class="pt-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mt-2">
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Clients</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Total more than 50 Clients</h5>
+
+                            <!-- Swiper -->
+                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client1.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client2.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client3.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client4.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client5.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client6.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client7.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client8.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -723,118 +680,71 @@
                 <!-- end row -->
             </div>
             <!-- end container -->
-        </section>
-        <!-- end contact -->
+        </div>
+        <!-- end clients -->
 
         <!-- Start footer -->
-        <footer class="custom-footer bg-white py-5 position-relative text-dark">
+        <footer class="custom-footer bg-white py-5 position-relative text-dark" style="background-color: #013556 !important; ">
+            <div class="bg-overlay bg-overlay-pattern"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 mt-0 text-center">
+                <div class="row ">
+                    <div class="col-lg-5 mt-0 text-center">
                         <div>
                             <div>
                                 <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" alt="logo light" height="100">
                             </div>
-                            <div class="mt-4 fs-13">
-                            <h3>World Best Consultant</h3>
-                            <h5 class="ff-secondary">Berkolaborasi & mengembangkan perusahaan dengan perhatian organisasi yang detail & komprehensif, bekerja sama dengan tim/karyawan Anda untuk mengoptimalkan sistem dan keuangan perusahaan dengan cara yang terbukti berhasil.</h5>
+                            <div class="mt-4 fs-13" >
+                                <h3 style="color: #fff !important;">World Best Consultant</h3>
+                                <p style="color: #fff !important; text-align: justify" >Collaborate & develop the company with detailed & comprehensive organizational attention, working with your team / employees to optimize the company's systems and finances in ways that are proven to be successful.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-lg-7 pt-5">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <p class=" mb-4 " style="color: #fff !important;">Kami berkembang ketika memunculkan ide-ide inovatif, tetapi juga memahami bahwa konsep yang cerdas harus didukung dengan faucibus sapien odio yang terukur hasil.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div>
+                                <div class="" >
+                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Phone:</h5>
+                                    <div class=" fw-semibold" style="color: #fff !important;">0811 843 1989</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div>
+                                <div class="">
+                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Email:</h5>
+                                    <div class="fw-semibold" style="color: #fff !important;">consultingsnapbiz@gmail. com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div>
+                                <div class="">
+                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Working Hours:</h5>
+                                    <div class="fw-semibold" style="color: #fff !important;">9:00am to 6:00pm</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-{{--                <div class="col-lg-7 ms-lg-auto">--}}
-{{--                    <div class="row">--}}
-{{--                        <div class="col-sm-4 mt-4">--}}
-{{--                            <h5 class="text-dark mb-0">Company</h5>--}}
-{{--                            <div class="text-muted mt-3">--}}
-{{--                                <ul class="list-unstyled ff-secondary footer-list fs-14">--}}
-{{--                                    <li><a href="pages-profile" style="color: black;">About Us</a></li>--}}
-{{--                                    <li><a href="pages-gallery" style="color: black;">Gallery</a></li>--}}
-{{--                                    <li><a href="apps-projects-overview" style="color: black;">Projects</a></li>--}}
-{{--                                    <li><a href="pages-timeline" style="color: black;">Timeline</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-sm-4 mt-4">--}}
-{{--                            <h5 class="text-dark mb-0">Apps Pages</h5>--}}
-{{--                            <div class="text-muted mt-3">--}}
-{{--                                <ul class="list-unstyled ff-secondary footer-list fs-14 text-dark">--}}
-{{--                                    <li><a href="pages-pricing" style="color: black;">Calendar</a></li>--}}
-{{--                                    <li><a href="apps-mailbox" style="color: black;">Mailbox</a></li>--}}
-{{--                                    <li><a href="apps-chat" style="color: black;">Chat</a></li>--}}
-{{--                                    <li><a href="apps-crm-deals" style="color: black;">Deals</a></li>--}}
-{{--                                    <li><a href="apps-tasks-kanban" style="color: black;">Kanban Board</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-sm-4 mt-4">--}}
-{{--                            <h5 class="text-dark mb-0">Support</h5>--}}
-{{--                            <div class="text-muted mt-3">--}}
-{{--                                <ul class="list-unstyled ff-secondary footer-list fs-14 text-dark">--}}
-{{--                                    <li><a href="pages-faqs" style="color: black;">FAQ</a></li>--}}
-{{--                                    <li><a href="pages-faqs" style="color: black;">Contact</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
             </div>
 
-            <div class="row text-center text-sm-start align-items-center mt-5">
-                <div class="col-sm-12 text-center">
-                    <div>
-                        <p class="copy-rights mb-0">
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> © Omni Digital Technology - Copyright
-                        </p>
-                    </div>
-                </div>
-{{--                <div class="col-sm-6">--}}
-{{--                    <div class="text-sm-end mt-3 mt-sm-0">--}}
-{{--                        <ul class="list-inline mb-0 footer-social-link">--}}
-{{--                            <li class="list-inline-item">--}}
-{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                    <div class="avatar-title rounded-circle">--}}
-{{--                                        <i class="ri-facebook-fill"></i>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li class="list-inline-item">--}}
-{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                    <div class="avatar-title rounded-circle">--}}
-{{--                                        <i class="ri-github-fill"></i>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li class="list-inline-item">--}}
-{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                    <div class="avatar-title rounded-circle">--}}
-{{--                                        <i class="ri-linkedin-fill"></i>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li class="list-inline-item">--}}
-{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                    <div class="avatar-title rounded-circle">--}}
-{{--                                        <i class="ri-google-fill"></i>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li class="list-inline-item">--}}
-{{--                                <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                    <div class="avatar-title rounded-circle">--}}
-{{--                                        <i class="ri-dribbble-line"></i>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
+{{--            <div class="row text-center text-sm-start align-items-center mt-5">--}}
+{{--                <div class="col-sm-12 text-center">--}}
+{{--                    <div>--}}
+{{--                        <p class="copy-rights mb-0" style="color: #fff !important;">--}}
+{{--                            <script>--}}
+{{--                                document.write(new Date().getFullYear())--}}
+{{--                            </script> © Omni Digital Technology - Copyright--}}
+{{--                        </p>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-            </div>
-    </div>
-    </footer>
+{{--            </div>--}}
+        </footer>
     <!-- end footer -->
 
     <!--start back-to-top-->
