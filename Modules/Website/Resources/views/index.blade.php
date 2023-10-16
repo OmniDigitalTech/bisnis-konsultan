@@ -11,7 +11,7 @@
 
     <!-- Begin page -->
     <div class="layout-wrapper landing">
-        <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-landing fixed-top polygon" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="{{URL::asset('/index')}}">
                     <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="70">
