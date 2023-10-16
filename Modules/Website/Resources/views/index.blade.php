@@ -148,7 +148,7 @@
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
                             <h1 class="mb-3 ff-secondary fw-semibold lh-base">The Best Consultant Solution for Your Business Success</h1>
-                            <p class="text-muted">Improve Your Business Performance with Us! We are a trusted partner for your business growth. With our experience in data analysis, marketing strategy, and operational management, we will help you achieve the success you desire. Get a solution tailored to your needs</p>
+                            <p class="text-muted">Tingkatkan Kinerja Bisnis Anda bersama Kami! Kami adalah mitra terpercaya untuk pertumbuhan bisnis Anda. Dengan pengalaman kami dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai kesuksesan yang Anda inginkan. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda.</p>
                         </div>
                     </div>
                     <!-- end col -->
@@ -167,7 +167,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h5 class="fs-18">Accounting & Bookkeeping</h5>
-                                <p class="text-muted my-3 ff-secondary">These services include maintaining proper and accurate financial records.</p>
+                                <p class="text-muted my-3 ff-secondary">Layanan ini termasuk memelihara catatan keuangan yang baik dan akurat.</p>
                             </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h5 class="fs-18">Planning / Financial Budgeting</h5>
-                                <p class="text-muted my-3 ff-secondary">This service focuses on careful financial planning, including preparing a financial budget.</p>
+                                <p class="text-muted my-3 ff-secondary">Layanan ini berfokus pada perencanaan keuangan yang matang, termasuk penyusunan anggaran keuangan.</p>
                             </div>
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h5 class="fs-18">Audit Internal & SOP</h5>
-                                <p class="text-muted my-3 ff-secondary">Evaluation of the company's internal processes to ensure efficiency, compliance and good risk management.</p>
+                                <p class="text-muted my-3 ff-secondary">Evaluasi proses internal perusahaan untuk memastikan efisiensi, kepatuhan dan manajemen risiko yang baik.</p>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h5 class="fs-18">Financial Statement Check & Audit.</h5>
-                                <p class="text-muted my-3 ff-secondary">This service involves examining and auditing your company's financial statements.</p>
+                                <p class="text-muted my-3 ff-secondary">Layanan ini melibatkan pemeriksaan dan audit laporan keuangan perusahaan Anda.</p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h5 class="fs-18">Financial Management & Internal Control Analysis</h5>
-                                <p class="text-muted my-3 ff-secondary">These services relate to corporate financial management and internal control analysis.</p>
+                                <p class="text-muted my-3 ff-secondary">Layanan ini berkaitan dengan manajemen keuangan perusahaan dan analisis pengendalian internal.</p>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h5 class="fs-18">Financial, External Audit & Internal Report</h5>
-                                <p class="text-muted my-3 ff-secondary">This service includes inspection and audit of internal and external financial reports.</p>
+                                <p class="text-muted my-3 ff-secondary">Layanan ini mencakup pemeriksaan dan audit laporan keuangan internal dan eksternal.</p>
                             </div>
                         </div>
                     </div>
@@ -346,7 +346,7 @@
                                 </div>
                             </div>
                             <h3 class="mb-3 fs-20">Experience & Collaboration</h3>
-                            <p class="mb-4 ff-secondary fs-16">Our experience is in handling external and internal audits and preparing financial reports for various types of companies, ranging from the banking, securities, retail, transportation, logistics, trade, manufacturing, services and others.</p>
+                            <p class="mb-4 ff-secondary fs-16">Pengalaman kami menangani audit eksternal dan internal serta menyiapkan laporan keuangan untuk berbagai jenis perusahaan, mulai dari perbankan, sekuritas, ritel, transportasi, logistik, perdagangan, manufaktur, jasa dan lain-lain.</p>
                             <div class="row pt-3">
                                 <div class="col-3">
                                     <div class="text-center">
@@ -409,7 +409,7 @@
                         <div class="text-muted">
                             <h5 class="fs-12 text-uppercase" style="color: #fedf47">System</h5>
                             <h4 class="mb-3">Accounting Experience</h4>
-                            <p class="mb-4 ff-secondary">Structured process and set of procedures used by organizations to manage their financial data, transactions, and information.</p>
+                            <p class="mb-4 ff-secondary">Proses terstruktur dan serangkaian prosedur yang digunakan oleh organisasi untuk mengelola data, transaksi, dan informasi keuangan mereka.</p>
 
                             <div class="row">
                                 <div class="col-sm-5">
@@ -507,8 +507,7 @@
                         <div class="text-muted ps-lg-5">
                             <h5 class="fs-12 text-uppercase" style="color: #fedf47">Structure</h5>
                             <h4 class="mb-3">Well Documented</h4>
-                            <p class="mb-4">Used to describe something that is known about or known to be true because there are many documents that describe it,
-                                prove it, etc.</p>
+                            <p class="mb-4">Digunakan untuk menggambarkan sesuatu yang diketahui atau diketahui kebenarannya karena banyak dokumen yang menjelaskannya, buktikan, dll.</p>
 
                             <div class="vstack gap-2">
                                 <div class="d-flex align-items-center">
@@ -623,7 +622,7 @@
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
                             <h3 class="mb-3 fw-semibold">Our Work Process</h3>
-                            <p class="text-muted mb-4 ff-secondary">A business consultant is a professional who provides expert advice and assistance to organizations in various aspects of their operations to help them improve efficiency, productivity, and profitability.</p>
+                            <p class="text-muted mb-4 ff-secondary">Konsultan bisnis adalah seorang profesional yang memberikan nasihat dan bantuan ahli kepada organisasi dalam berbagai aspek operasinya untuk membantu mereka meningkatkan efisiensi, produktivitas, dan profitabilitas.</p>
                         </div>
                     </div>
                 </div>
@@ -642,7 +641,7 @@
                             </div>
 
                             <h5>Assessment</h5>
-                            <p class="text-muted ff-secondary">The initial stage of consultation is identifying the problem or opportunity that needs to be addressed.</p>
+                            <p class="text-muted ff-secondary">Tahap awal konsultasi adalah mengidentifikasi masalah atau peluang yang perlu ditangani.</p>
                         </div>
                     </div>
                     <!-- end col -->
@@ -658,7 +657,7 @@
                             </div>
 
                             <h5>Solution Development</h5>
-                            <p class="text-muted ff-secondary">Designing a strategic plan that includes actions and solutions that will be taken to overcome problems or achieve business goals.</p>
+                            <p class="text-muted ff-secondary">Merancang rencana strategis yang mencakup tindakan dan solusi yang akan diambil untuk mengatasi masalah atau mencapai tujuan bisnis.</p>
                         </div>
                     </div>
                     <!-- end col -->
@@ -671,7 +670,7 @@
                             </div>
 
                             <h5>Support and Maintenance</h5>
-                            <p class="text-muted ff-secondary">The consultant can provide training to the client's internal team to ensure a good understanding of the changes that have been made.</p>
+                            <p class="text-muted ff-secondary">Konsultan dapat memberikan pelatihan kepada tim internal klien untuk memastikan pemahaman yang baik terhadap perubahan yang telah dilakukan.</p>
                         </div>
                     </div>
                     <!-- end col -->
@@ -689,9 +688,7 @@
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
                             <h3 class="mb-3 fw-semibold">Get In Touch</h3>
-                            <p class="text-muted mb-4 ff-secondary">We thrive when coming up with innovative ideas but also
-                                understand that a smart concept should be supported with faucibus sapien odio measurable
-                                results.</p>
+                            <p class="text-muted mb-4 ff-secondary">Kami berkembang ketika memunculkan ide-ide inovatif, tetapi juga memahami bahwa konsep yang cerdas harus didukung dengan faucibus sapien odio yang terukur hasil.</p>
                         </div>
                     </div>
                 </div>
@@ -740,7 +737,7 @@
                             </div>
                             <div class="mt-4 fs-13">
                             <h3>World Best Consultant</h3>
-                            <h5 class="ff-secondary">Collaborate & develop the company with detailed & comprehensive organizational attention, working with your team / employees to optimize the company's systems and finances in ways that are proven to be successful.</h5>
+                            <h5 class="ff-secondary">Berkolaborasi & mengembangkan perusahaan dengan perhatian organisasi yang detail & komprehensif, bekerja sama dengan tim/karyawan Anda untuk mengoptimalkan sistem dan keuangan perusahaan dengan cara yang terbukti berhasil.</h5>
                         </div>
                     </div>
                 </div>
