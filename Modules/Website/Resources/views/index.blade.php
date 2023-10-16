@@ -11,7 +11,7 @@
 
     <!-- Begin page -->
     <div class="layout-wrapper landing">
-        <nav class="navbar navbar-expand-lg navbar-landing fixed-top polygon" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="{{URL::asset('/index')}}">
                     <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="70">
@@ -45,7 +45,7 @@
         <div class="vertical-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent.show"></div>
 
         <!-- start hero section -->
-            <section class="section job-hero-section pb-0 p-5 polygon" id="hero">
+            <section class="section job-hero-section pb-0 p-5" id="hero">
             <div class="container pt-5 pb-5">
                 <div class="row justify-content-between align-items-center pt-5 pb-5">
                     <div class="col-lg-6 pt-4">
@@ -69,7 +69,7 @@
         <!-- end hero section -->
 
         <!-- start client section -->
-        <div class="pt-2 polygon">
+        <div class="pt-2">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -142,7 +142,7 @@
         <!-- end client section -->
 
         <!-- start services -->
-        <section class="section pt-5 polygon" id="services">
+        <section class="section pt-5" id="services">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -259,7 +259,7 @@
         </section>
         <!-- end services -->
 
-        <div class="pb-5 mt-0 pt-0 polygon">
+        <div class="pb-5 mt-0 pt-0">
             <div class="container pb-5">
                 <div class="row">
                     <div class="col-lg-12">
@@ -330,7 +330,7 @@
         </div>
 
         <!-- start features -->
-        <section class="section bg-light py-5 polygon" id="features">
+        <section class="section bg-light py-5" id="features">
             <div class="container">
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 col-sm-7 mx-auto">
@@ -402,7 +402,7 @@
         <!-- end cta -->
 
         <!-- start features -->
-        <section class="section polygon">
+        <section class="section">
             <div class="container">
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 order-2 order-lg-1">
@@ -570,7 +570,7 @@
         </section>
         <!-- end features -->
 
-        <div class="mb-0 mt-0 polygon">
+        <div class="mb-0 mt-0">
             <div class="container pb-5">
                 <div class="row">
                     <div class="col-lg-12">
@@ -617,7 +617,7 @@
         </div>
 
         <!-- start Work Process -->
-        <section class="section polygon">
+        <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -683,7 +683,7 @@
         <!-- end Work Process -->
 
         <!-- start contact -->
-        <section class="section polygon" id="contact">
+        <section class="section" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -730,7 +730,7 @@
         <!-- end contact -->
 
         <!-- Start footer -->
-        <footer class="custom-footer bg-white py-5 position-relative text-dark polygon">
+        <footer class="custom-footer bg-white py-5 position-relative text-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 mt-0 text-center">
