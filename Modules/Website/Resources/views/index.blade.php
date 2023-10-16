@@ -46,9 +46,9 @@
 
         <!-- start hero section -->
             <section class="section job-hero-section pb-0 p-5 polygon" id="hero">
-            <div class="container pt-5">
-                <div class="row justify-content-between align-items-center pt-5">
-                    <div class="col-lg-4 pt-4">
+            <div class="container pt-5 pb-5">
+                <div class="row justify-content-between align-items-center pt-5 pb-5">
+                    <div class="col-lg-6 pt-4">
                         <div>
                             <h1 class="display-6 fw-semibold text-capitalize lh-base mb-0" data-aos="fade-right">SNAPBIZ</h1>
                             <h1 class="fw-light text-capitalize mb-3" data-aos="fade-right">Business Consultant</h1>
@@ -56,9 +56,9 @@
                         </div>
                     </div>
                     <!--end col-->
-                    <div class="col-lg-8 pt-4">
-                        <div class="position-relative home-img text-center mt-5 mt-lg-0">
-                            <img src="{{URL::asset('build/images/job-profile3.png')}}" alt="" class="user-img" width="115%">
+                    <div class="col-lg-6">
+                        <div class="position-relative home-img text-center">
+                            <img src="{{URL::asset('build/images/job-profile4.png')}}" alt="" class="user-img" width="70%">
                         </div>
                     </div>
                 </div>
