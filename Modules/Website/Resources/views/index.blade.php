@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="{{URL::asset('/index')}}">
-                    <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="70">
+                    <img src="{{ URL::asset('build/images/logo/logo_snapbiz_black.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="70">
                 </a>
                 <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -691,7 +691,7 @@
                     <div class="col-lg-5 mt-0 text-center">
                         <div>
                             <div>
-                                <img src="{{ URL::asset('build/images/logo_snapbiz.png') }}" alt="logo light" height="100">
+                                <img src="{{ URL::asset('build/images/logo/logo_snapbiz_white.png') }}" alt="logo light" height="100">
                             </div>
                             <div class="mt-4 fs-13" >
                                 <h3 style="color: #fff !important;">World Best Consultant</h3>
