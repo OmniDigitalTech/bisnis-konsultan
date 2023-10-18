@@ -25,16 +25,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
                         <li class="nav-item">
-                            <a class="nav-link fs-14 active" href="#hero">Home</a>
+                            <a class="nav-link fs-14 active" href="#hero">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-14" href="#services">Services</a>
+                            <a class="nav-link fs-14" href="#services">Layanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-14" href="#features">Experience & Collaboration</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-14" href="#contact">Contact</a>
+                            <a class="nav-link fs-14" href="#features">Pengalaman & Kolaborasi</a>
                         </li>
                     </ul>
                 </div>
@@ -51,8 +48,8 @@
                     <div class="col-lg-6 pt-4">
                         <div>
                             <h1 class="display-6 fw-semibold text-capitalize lh-base mb-0" data-aos="fade-right">SNAPBIZ</h1>
-                            <h1 class="fw-light text-capitalize mb-3" data-aos="fade-right">Business Consultant</h1>
-                            <p class="lead text-muted lh-base mb-4" data-aos="fade-left">Better System, Better Profit Better Cash Flow, Better Businesses.</p>
+                            <h1 class="fw-light text-capitalize mb-3" data-aos="fade-right">Konsultasi Bisnis</h1>
+                            <p class="lead text-muted lh-base mb-4" data-aos="fade-left">Sistem Lebih Baik, Keuntungan Lebih Baik Arus Kas Lebih Baik, Bisnis Lebih Baik.</p>
                         </div>
                     </div>
                     <!--end col-->
@@ -74,8 +71,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center mt-5">
-                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Partners</h5>
-                            <h5 class="fs-20" data-aos="fade-down">Tax, Training, VC, KTB UKM</h5>
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Mitra Kami</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Pajak, Pelatihan, VC, KTB UKM</h5>
 
                             <!-- Swiper -->
                             <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
@@ -121,7 +118,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
-                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">The Best Consultant Solution for Your Business Success</h1>
+                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">Solusi Konsultan Terbaik untuk Kesuksesan Bisnis Anda</h1>
                             <p class="text-muted">Tingkatkan Kinerja Bisnis Anda bersama Kami! Kami adalah mitra terpercaya untuk pertumbuhan bisnis Anda. Dengan pengalaman kami dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai kesuksesan yang Anda inginkan. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda.</p>
                         </div>
                     </div>
@@ -140,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Accounting & Bookkeeping</h5>
+                                <h5 class="fs-18">Akuntansi & Pembukuan</h5>
                                 <p class="text-muted my-3 ff-secondary">Layanan ini termasuk memelihara catatan keuangan yang baik dan akurat.</p>
                             </div>
                         </div>
@@ -156,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Planning / Financial Budgeting</h5>
+                                <h5 class="fs-18">Perencanaan / Penganggaran Keuangan</h5>
                                 <p class="text-muted my-3 ff-secondary">Layanan ini berfokus pada perencanaan keuangan yang matang, termasuk penyusunan anggaran keuangan.</p>
                             </div>
                         </div>
@@ -188,7 +185,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Financial Statement Check & Audit.</h5>
+                                <h5 class="fs-18">Pemeriksaan & Audit Laporan Keuangan.</h5>
                                 <p class="text-muted my-3 ff-secondary">Layanan ini melibatkan pemeriksaan dan audit laporan keuangan perusahaan Anda.</p>
                             </div>
                         </div>
@@ -204,7 +201,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Financial Management & Internal Control Analysis</h5>
+                                <h5 class="fs-18">Analisis Manajemen Keuangan & Pengendalian Internal</h5>
                                 <p class="text-muted my-3 ff-secondary">Layanan ini berkaitan dengan manajemen keuangan perusahaan dan analisis pengendalian internal.</p>
                             </div>
                         </div>
@@ -220,7 +217,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Financial, External Audit & Internal Report</h5>
+                                <h5 class="fs-18">Keuangan, Audit Eksternal & Laporan Internal</h5>
                                 <p class="text-muted my-3 ff-secondary">Layanan ini mencakup pemeriksaan dan audit laporan keuangan internal dan eksternal.</p>
                             </div>
                         </div>
@@ -239,8 +236,8 @@
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="text-muted">
-                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">System</h5>
-                            <h4 class="mb-3">Accounting Experience</h4>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Sistem</h5>
+                            <h4 class="mb-3">Pengalaman Akuntansi</h4>
                             <p class="mb-4 ff-secondary">Proses terstruktur dan serangkaian prosedur yang digunakan oleh organisasi untuk mengelola data, transaksi, dan informasi keuangan mereka.</p>
 
                             <div class="row">
@@ -337,8 +334,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="text-muted ps-lg-5">
-                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Structure</h5>
-                            <h4 class="mb-3">Well Documented</h4>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Struktur</h5>
+                            <h4 class="mb-3">Dokumentasi yang Baik</h4>
                             <p class="mb-4">Digunakan untuk menggambarkan sesuatu yang diketahui atau diketahui kebenarannya karena banyak dokumen yang menjelaskannya, buktikan, dll.</p>
 
                             <div class="vstack gap-2">
@@ -351,7 +348,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Better System</p>
+                                        <p class="mb-0">Sistem yang Lebih Baik</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -363,7 +360,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Better Profit</p>
+                                        <p class="mb-0">Keuntungan Lebih Baik</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -375,7 +372,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Better Cash Flow</p>
+                                        <p class="mb-0">Arus Kas yang Lebih Baik</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -387,7 +384,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Better Businesses</p>
+                                        <p class="mb-0">Bisnis yang Lebih Baik</p>
                                     </div>
                                 </div>
                             </div>
@@ -408,8 +405,8 @@
                     <div class="col-lg-12">
 
                         <div class="text-center mt-5">
-                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Portofolio Audit & Accounting Service</h5>
-                            <h5 class="fs-20" data-aos="fade-down">Under EY Public Accounting Firm</h5>
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Layanan Audit & Akuntansi Portofolio</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Di bawah Kantor Akuntan Publik EY</h5>
 
                             <!-- Swiper -->
                             <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
@@ -481,13 +478,13 @@
                 <div class="row align-items-center gy-4">
                     <div class="col-sm">
                         <div>
-                            <h4 class="text-white mb-0 fw-semibold">Grow Up Your Business With SNAPBIZ</h4>
+                            <h4 class="text-white mb-0 fw-semibold">Kembangkan Bisnis Anda Bersama SNAPBIZ</h4>
                         </div>
                     </div>
                     <!-- end col -->
                     <div class="col-sm-auto">
                         <div>
-                            <a href="#" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
+                            <a href="#" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Hubungi Sekarang</a>
                         </div>
                     </div>
                     <!-- end col -->
@@ -504,7 +501,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
-                            <h3 class="mb-3 fw-semibold">Our Work Process</h3>
+                            <h3 class="mb-3 fw-semibold">Proses Kerja Kami</h3>
                             <p class="text-muted mb-4 ff-secondary">Konsultan bisnis adalah seorang profesional yang memberikan nasihat dan bantuan ahli kepada organisasi dalam berbagai aspek operasinya untuk membantu mereka meningkatkan efisiensi, produktivitas, dan profitabilitas.</p>
                         </div>
                     </div>
@@ -580,25 +577,25 @@
                                     <i class="ri-star-fill fs-36" style="color: #fedf47"></i>
                                 </div>
                             </div>
-                            <h3 class="mb-3 fs-20">Experience & Collaboration</h3>
+                            <h3 class="mb-3 fs-20">Pengalaman & Kolaborasi</h3>
                             <p class="mb-4 ff-secondary fs-16">Pengalaman kami menangani audit eksternal dan internal serta menyiapkan laporan keuangan untuk berbagai jenis perusahaan, mulai dari perbankan, sekuritas, ritel, transportasi, logistik, perdagangan, manufaktur, jasa dan lain-lain.</p>
                             <div class="row pt-3">
                                 <div class="col-3">
                                     <div class="text-center">
                                         <h4>10+</h4>
-                                        <p>Year Experience</p>
+                                        <p>Tahun Pengalaman</p>
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="text-center">
                                         <h4>50+</h4>
-                                        <p>Clients</p>
+                                        <p>Klien</p>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="text-center">
                                         <h4>10</h4>
-                                        <p>Partners & Audit</p>
+                                        <p>Mitra & Audit</p>
                                     </div>
                                 </div>
                             </div>
@@ -618,8 +615,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center mt-2">
-                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Our Clients</h5>
-                            <h5 class="fs-20" data-aos="fade-down">Total more than 50 Clients</h5>
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Klien Kami</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Total lebih dari 50 Klien</h5>
 
                             <!-- Swiper -->
                             <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
@@ -694,8 +691,8 @@
                                 <img src="{{ URL::asset('build/images/logo/logo_snapbiz_white.png') }}" alt="logo light" height="100">
                             </div>
                             <div class="mt-4 fs-13" >
-                                <h3 style="color: #fff !important;">World Best Consultant</h3>
-                                <p style="color: #fff !important; text-align: justify" >Collaborate & develop the company with detailed & comprehensive organizational attention, working with your team / employees to optimize the company's systems and finances in ways that are proven to be successful.</p>
+                                <h3 style="color: #fff !important;">Konsultan Terbaik Dunia</h3>
+                                <p style="color: #fff !important; text-align: justify" >Berkolaborasi & mengembangkan perusahaan dengan perhatian organisasi yang detail & komprehensif, bekerja sama dengan tim/karyawan Anda untuk mengoptimalkan sistem dan keuangan perusahaan dengan cara yang terbukti berhasil.</p>
                             </div>
                         </div>
                     </div>
@@ -708,7 +705,7 @@
                         <div class="col-lg-4 text-center">
                             <div>
                                 <div class="" >
-                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Phone:</h5>
+                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Telepon:</h5>
                                     <div class=" fw-semibold" style="color: #fff !important;">0811 843 1989</div>
                                 </div>
                             </div>
@@ -724,7 +721,7 @@
                         <div class="col-lg-4 text-center">
                             <div>
                                 <div class="">
-                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Working Hours:</h5>
+                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Jam Kerja:</h5>
                                     <div class="fw-semibold" style="color: #fff !important;">9:00am to 6:00pm</div>
                                 </div>
                             </div>
