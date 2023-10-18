@@ -135,7 +135,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-pencil-ruler-2-line fs-36" style="color: #fedf47"></i>
+                                        <img src="{{ URL::asset('build/images/services/audit.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-lightbulb-flash-line fs-36" style="color: #fedf47"></i>
+                                        <img src="{{ URL::asset('build/images/services/perencanaan.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-stack-line fs-36" style="color: #fedf47"></i>
+                                        <img src="{{ URL::asset('build/images/services/sop.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
-                                        <i class="ri-settings-2-line fs-36" style="color: #fedf47"></i>
+                                        <img src="{{ URL::asset('build/images/services/training.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
-                                        <i class="ri-slideshow-line fs-36" style="color: #fedf47"></i>
+                                        <img src="{{ URL::asset('build/images/services/analisis.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
                                     <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
-                                        <i class="ri-briefcase-5-line fs-36" style="color: #fedf47"></i>
+                                        <img src="{{ URL::asset('build/images/services/report.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
                             </div>
@@ -487,7 +487,7 @@
                     <!-- end col -->
                     <div class="col-sm-auto">
                         <div>
-                            <a href="#" target="_blank" class="btn bg-gradient btn-warning"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
+                            <a href="#" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Call Now</a>
                         </div>
                     </div>
                     <!-- end col -->
