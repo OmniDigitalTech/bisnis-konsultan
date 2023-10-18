@@ -582,8 +582,8 @@
                             <div class="row pt-3">
                                 <div class="col-3">
                                     <div class="text-center">
-                                        <h4>10+</h4>
-                                        <p>Tahun Pengalaman</p>
+                                        <h4>10+ Thn</h4>
+                                        <p>Pengalaman</p>
                                     </div>
                                 </div>
                                 <div class="col-3">
