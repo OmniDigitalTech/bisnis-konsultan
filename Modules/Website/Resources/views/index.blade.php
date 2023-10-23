@@ -431,37 +431,31 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto2.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto1.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto3.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto4.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto5.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto6.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto2.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto7.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto3.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/porto/porto5.png') }}" alt="client-img"
+                                            <img src="{{ URL::asset('build/images/porto/porto1.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
