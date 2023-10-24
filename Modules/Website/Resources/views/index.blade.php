@@ -651,7 +651,7 @@
                             <div>
                                 <div class="">
                                     <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Instagram:</h5>
-                                    <a href="https://www.instagram.com/snapbizconsulting/">
+                                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=amanda.setiadi@snapbiz.com&su=&body=&bcc=&tf=cm">
                                         <div class="fw-semibold" style="color: #fff !important;">@snapbizconsulting</div>
                                     </a>
                                 </div>
