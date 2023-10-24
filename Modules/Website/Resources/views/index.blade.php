@@ -714,15 +714,19 @@
                             <div>
                                 <div class="">
                                     <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Email:</h5>
-                                    <div class="fw-semibold" style="color: #fff !important;">consultingsnapbiz@gmail. com</div>
+                                    <a href="mailto:amanda.setiadi@snapbiz.com">
+                                        <div class="fw-semibold" style="color: #fff !important;">amanda.setiadi@snapbiz.com</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 text-center">
                             <div>
                                 <div class="">
-                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Jam Kerja:</h5>
-                                    <div class="fw-semibold" style="color: #fff !important;">9:00am to 6:00pm</div>
+                                    <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Instagram:</h5>
+                                    <a href="https://www.instagram.com/snapbizconsulting/">
+                                        <div class="fw-semibold" style="color: #fff !important;">@snapbizconsulting</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
