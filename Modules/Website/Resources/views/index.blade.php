@@ -619,86 +619,86 @@
         <!-- end features -->
 
         <!-- start clients -->
-{{--        <div class="pt-5 bg-light">--}}
-{{--            <div class="container">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-lg-12">--}}
-{{--                        <div class="text-center mt-2">--}}
-{{--                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Klien Kami</h5>--}}
-{{--                            <h5 class="fs-20" data-aos="fade-down">Total lebih dari 50 Klien</h5>--}}
+        <div class="pt-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mt-2">
+                            <h5 class="fs-20 fw-bold" data-aos="fade-down">Klien Kami</h5>
+                            <h5 class="fs-20" data-aos="fade-down">Total lebih dari 50 Klien</h5>
 
-{{--                            <!-- Swiper -->--}}
-{{--                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">--}}
-{{--                                <div class="swiper-wrapper">--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client1.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client2.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client3.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client4.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client6.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client7.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client8.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client9.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client10.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swiper-slide">--}}
-{{--                                        <div class="client-images">--}}
-{{--                                            <img src="{{ URL::asset('build/images/clients/client11.png') }}" alt="client-img"--}}
-{{--                                                 class="mx-auto img-fluid d-block">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <!-- end row -->--}}
-{{--            </div>--}}
-{{--            <!-- end container -->--}}
-{{--        </div>--}}
+                            <!-- Swiper -->
+                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client1.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client2.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client3.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client4.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client6.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client7.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client8.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client9.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client10.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client11.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
         <!-- end clients -->
 
         <!-- Start footer -->
