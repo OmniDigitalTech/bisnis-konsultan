@@ -31,6 +31,9 @@
                             <a class="nav-link fs-14" href="#services">Layanan</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link fs-14" href="#contact">Hubungi Kami</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link fs-14" href="#features">Pengalaman & Kolaborasi</a>
                         </li>
                     </ul>
@@ -49,7 +52,7 @@
                         <div>
                             <h1 class="display-6 fw-semibold text-capitalize lh-base mb-0" data-aos="fade-right">SNAPBIZ</h1>
                             <h1 class="fw-light text-capitalize mb-3" data-aos="fade-right">Konsultasi Bisnis</h1>
-                            <p class="lead text-muted lh-base mb-4" data-aos="fade-left">Sistem Lebih Baik, Keuntungan Lebih Baik Arus Kas Lebih Baik, Bisnis Lebih Baik.</p>
+                            <p class="lead text-muted lh-base mb-4" data-aos="fade-left" style="font-size: 1.3rem">Sistem Lebih Baik, Keuntungan Lebih Baik, Arus Kas Lebih Baik, Bisnis Lebih Baik</p>
                         </div>
                     </div>
                     <!--end col-->
@@ -118,15 +121,15 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
-                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">Solusi Konsultan Terbaik untuk Kesuksesan Bisnis Anda</h1>
-                            <p class="text-muted">Tingkatkan Kinerja Bisnis Anda bersama Kami! Kami adalah mitra terpercaya untuk pertumbuhan bisnis Anda. Dengan pengalaman kami dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai kesuksesan yang Anda inginkan. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda.</p>
+                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">Mitrakan Kami dalam Pertumbuhan Bisnismu</h1>
+                            <p class="text-muted">Kami adalah mitra terpercaya yang akan membantu Anda mencapai tingkat keunggulan. Dengan pengalaman luas dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai tujuan bisnis Anda. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda hari ini.</p>
                         </div>
                     </div>
                     <!-- end col -->
                 </div>
                 <!-- end row -->
 
-                <div class="row g-3">
+                <div class="row g-3" style="justify-content: center">
                     <div class="col-lg-4">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
@@ -217,8 +220,24 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Keuangan, Audit Eksternal & Laporan Internal</h5>
-                                <p class="text-muted my-3 ff-secondary">Layanan ini mencakup pemeriksaan dan audit laporan keuangan internal dan eksternal.</p>
+                                <h5 class="fs-18">Laporan Keuangan</h5>
+                                <p class="text-muted my-3 ff-secondary">Layanan ini mencakup pemeriksaan dan audit laporan keuangan untuk kepentingan bersama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                        <img src="{{ URL::asset('build/images/services/manajemen.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="65">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Pelatihan, Pendampingan, Konsultasi Keuangan untuk Karyawan dan Manajemen</h5>
+                                <p class="text-muted my-3 ff-secondary">Pelatihan dan pendampingan karyawan dan manajemen dalam hal pengetahuan dan keterampilan keuangan.</p>
                             </div>
                         </div>
                     </div>
@@ -393,13 +412,76 @@
                     <!-- end col -->
                 </div>
                 <!-- end row -->
+
+                <div class="row align-items-center mt-5 pt-lg-5 gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="text-muted">
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Kelebihan</h5>
+                            <h4 class="mb-3">Mengapa Memilih Kami Untuk Konsultasi Bisnis Anda?</h4>
+                            <p class="mb-4 ff-secondary">Dengan memilih kami untuk konsultasi bisnis Anda, Anda akan mendapatkan akses ke sumber daya, keahlian, dan pengalaman yang diperlukan untuk membantu bisnis Anda tumbuh dan berkembang.</p>
+
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="vstack gap-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Reputasi Teruji</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Keahlian Multidisiplin</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-2">
+                                                <div class="avatar-xs icon-effect">
+                                                    <div
+                                                        class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="fs-14 mb-0">Komitmen</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
+                        <div>
+                            <img src="{{ URL::asset('build/images/landing/features/img-7.png') }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
             </div>
             <!-- end container -->
         </section>
         <!-- end features -->
 
         <!-- start cta -->
-        <section class="py-5 position-relative" style="background-color: #013556 !important; ">
+        <section class="py-5 position-relative" id="contact" style="background-color: #013556 !important; ">
             <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
             <div class="container">
                 <div class="row align-items-center gy-4">
@@ -411,7 +493,7 @@
                     <!-- end col -->
                     <div class="col-sm-auto">
                         <div>
-                            <a href="#" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Hubungi Sekarang</a>
+                            <a href="https://wa.link/bvvuib" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Hubungi Sekarang</a>
                         </div>
                     </div>
                     <!-- end col -->
@@ -509,7 +591,7 @@
                             <div class="row pt-3">
                                 <div class="col-3">
                                     <div class="text-center">
-                                        <h4>10+ Thn</h4>
+                                        <h4>15+ Thn</h4>
                                         <p>Pengalaman</p>
                                     </div>
                                 </div>
@@ -574,12 +656,6 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="client-images">
-                                            <img src="{{ URL::asset('build/images/clients/client5.png') }}" alt="client-img"
-                                                 class="mx-auto img-fluid d-block">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-images">
                                             <img src="{{ URL::asset('build/images/clients/client6.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
@@ -593,6 +669,24 @@
                                     <div class="swiper-slide">
                                         <div class="client-images">
                                             <img src="{{ URL::asset('build/images/clients/client8.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client9.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client10.png') }}" alt="client-img"
+                                                 class="mx-auto img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-images">
+                                            <img src="{{ URL::asset('build/images/clients/client11.png') }}" alt="client-img"
                                                  class="mx-auto img-fluid d-block">
                                         </div>
                                     </div>
@@ -618,22 +712,24 @@
                                 <img src="{{ URL::asset('build/images/logo/logo_snapbiz_white.png') }}" alt="logo light" height="100">
                             </div>
                             <div class="mt-4 fs-13" >
-                                <h3 style="color: #fff !important;">Konsultan Terbaik Dunia</h3>
-                                <p style="color: #fff !important; text-align: justify" >Berkolaborasi & mengembangkan perusahaan dengan perhatian organisasi yang detail & komprehensif, bekerja sama dengan tim/karyawan Anda untuk mengoptimalkan sistem dan keuangan perusahaan dengan cara yang terbukti berhasil.</p>
+                                <h4 style="color: #fff !important;">Konsultan Terbaik bagi Pertumbuhan Bisnis</h4>
+                                <p style="color: #fff !important; text-align: justify" >Berkolaborasi & mengembangkan perusahaan dengan perhatian organisasi yang detail & komprehensif dan bekerjasama dengan tim/karyawan Anda untuk mengoptimalkan sistem dan keuangan perusahaan dengan cara yang terbukti berhasil.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row col-lg-7 pt-5">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <p class=" mb-4 " style="color: #fff !important;">Kami berkembang ketika memunculkan ide-ide inovatif, tetapi juga memahami bahwa konsep yang cerdas harus didukung dengan faucibus sapien odio yang terukur hasil.</p>
+                                <p class=" mb-4 " style="color: #fff !important;">Kami berkembang ketika memunculkan ide-ide inovatif, tetapi juga memahami bahwa konsep yang cerdas harus didukung dengan hasil yang terukur</p>
                             </div>
                         </div>
                         <div class="col-lg-4 text-center">
                             <div>
                                 <div class="" >
                                     <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Telepon:</h5>
-                                    <div class=" fw-semibold" style="color: #fff !important;">0811 843 1989</div>
+                                    <a href="https://wa.link/bvvuib">
+                                        <div class=" fw-semibold" style="color: #fff !important;">0811 843 1989</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
