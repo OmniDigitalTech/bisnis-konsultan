@@ -723,7 +723,7 @@
                                 <p class=" mb-4 " style="color: #fff !important;">Kami berkembang ketika memunculkan ide-ide inovatif, tetapi juga memahami bahwa konsep yang cerdas harus didukung dengan hasil yang terukur</p>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-3 text-center">
                             <div>
                                 <div class="" >
                                     <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Telepon:</h5>
@@ -733,7 +733,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-6 text-center">
                             <div>
                                 <div class="">
                                     <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Email:</h5>
@@ -743,7 +743,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-3 text-center">
                             <div>
                                 <div class="">
                                     <h5 class="fs-13 text-uppercase" style="color: #fff !important;">Instagram:</h5>
