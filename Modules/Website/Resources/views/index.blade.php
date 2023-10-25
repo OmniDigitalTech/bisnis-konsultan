@@ -182,7 +182,7 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #f9b333">
                                         <img src="{{ URL::asset('build/images/services/training.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #f9b333">
                                         <img src="{{ URL::asset('build/images/services/analisis.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
@@ -214,7 +214,7 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #f9b333">
                                         <img src="{{ URL::asset('build/images/services/report.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="30">
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #fedf47">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle" style="color: #f9b333">
                                         <img src="{{ URL::asset('build/images/services/manajemen.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="65">
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,7 +280,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,7 +293,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -310,7 +310,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,7 +323,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -362,7 +362,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                <i class="ri-check-fill" style="color: #f9b333"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -374,7 +374,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                <i class="ri-check-fill" style="color: #f9b333"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -386,7 +386,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                <i class="ri-check-fill" style="color: #f9b333"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -398,7 +398,7 @@
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
                                             <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                <i class="ri-check-fill" style="color: #f9b333"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -428,7 +428,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -441,7 +441,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -454,7 +454,7 @@
                                                 <div class="avatar-xs icon-effect">
                                                     <div
                                                         class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                        <i class="ri-check-fill" style="color: #fedf47"></i>
+                                                        <i class="ri-check-fill" style="color: #f9b333"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -525,7 +525,7 @@
                             </div>
                             <div class="avatar-sm icon-effect mx-auto mb-4">
                                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                    <i class="ri-quill-pen-line" style="color: #fedf47"></i>
+                                    <i class="ri-quill-pen-line" style="color: #f9b333"></i>
                                 </div>
                             </div>
 
@@ -541,7 +541,7 @@
                             </div>
                             <div class="avatar-sm icon-effect mx-auto mb-4">
                                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                    <i class="ri-user-follow-line" style="color: #fedf47"></i>
+                                    <i class="ri-user-follow-line" style="color: #f9b333"></i>
                                 </div>
                             </div>
 
@@ -554,7 +554,7 @@
                         <div class="process-card mt-4">
                             <div class="avatar-sm icon-effect mx-auto mb-4">
                                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                    <i class="ri-book-mark-line" style="color: #fedf47"></i>
+                                    <i class="ri-book-mark-line" style="color: #f9b333"></i>
                                 </div>
                             </div>
 
@@ -583,7 +583,7 @@
                         <div class="text-muted">
                             <div class="avatar-sm icon-effect mb-4">
                                 <div class="avatar-title bg-transparent rounded-circle text-success h1">
-                                    <i class="ri-star-fill fs-36" style="color: #fedf47"></i>
+                                    <i class="ri-star-fill fs-36" style="color: #f9b333"></i>
                                 </div>
                             </div>
                             <h3 class="mb-3 fs-20">Pengalaman & Kolaborasi</h3>
