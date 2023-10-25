@@ -78,7 +78,7 @@
                             <h5 class="fs-20" data-aos="fade-down">Pajak, Pelatihan, VC, KTB UKM</h5>
 
                             <!-- Swiper -->
-                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
+                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr" data-aos="zoom-in">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="client-images">
@@ -121,15 +121,15 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
-                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">Mitrakan Kami dalam Pertumbuhan Bisnismu</h1>
-                            <p class="text-muted">Kami adalah mitra terpercaya yang akan membantu Anda mencapai tingkat keunggulan. Dengan pengalaman luas dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai tujuan bisnis Anda. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda hari ini.</p>
+                            <h1 class="mb-3 ff-secondary fw-semibold lh-base" data-aos="fade-up">Mitrakan Kami dalam Pertumbuhan Bisnismu</h1>
+                            <p class="text-muted" data-aos="fade-up">Kami adalah mitra terpercaya yang akan membantu Anda mencapai tingkat keunggulan. Dengan pengalaman luas dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai tujuan bisnis Anda. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda hari ini.</p>
                         </div>
                     </div>
                     <!-- end col -->
                 </div>
                 <!-- end row -->
 
-                <div class="row g-3" style="justify-content: center">
+                <div class="row g-3" style="justify-content: center" data-aos="zoom-out-down">
                     <div class="col-lg-4">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
@@ -255,12 +255,12 @@
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="text-muted">
-                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Sistem</h5>
-                            <h4 class="mb-3">Pengalaman Akuntansi</h4>
-                            <p class="mb-4 ff-secondary">Proses terstruktur dan serangkaian prosedur yang digunakan oleh organisasi untuk mengelola data, transaksi, dan informasi keuangan mereka.</p>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;" data-aos="zoom-in-up">Sistem</h5>
+                            <h4 class="mb-3" data-aos="zoom-out-up">Pengalaman Akuntansi</h4>
+                            <p class="mb-4 ff-secondary" data-aos="zoom-in">Proses terstruktur dan serangkaian prosedur yang digunakan oleh organisasi untuk mengelola data, transaksi, dan informasi keuangan mereka.</p>
 
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5" data-aos="flip-left" data-aos-easing="ease-out-cubic">
                                     <div class="vstack gap-2">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 me-2">
@@ -303,7 +303,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-5"  data-aos="flip-left" data-aos-easing="ease-out-cubic">
                                     <div class="vstack gap-2">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 me-2">
@@ -353,11 +353,11 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="text-muted ps-lg-5">
-                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Struktur</h5>
-                            <h4 class="mb-3">Dokumentasi yang Baik</h4>
-                            <p class="mb-4">Digunakan untuk menggambarkan sesuatu yang diketahui atau diketahui kebenarannya karena banyak dokumen yang menjelaskannya, buktikan, dll.</p>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;" data-aos="zoom-in-up">Struktur</h5>
+                            <h4 class="mb-3" data-aos="zoom-out-up">Dokumentasi yang Baik</h4>
+                            <p class="mb-4" data-aos="zoom-in">Digunakan untuk menggambarkan sesuatu yang diketahui atau diketahui kebenarannya karena banyak dokumen yang menjelaskannya, buktikan, dll.</p>
 
-                            <div class="vstack gap-2">
+                            <div class="vstack gap-2" data-aos="flip-left" data-aos-easing="ease-out-cubic">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 me-2">
                                         <div class="avatar-xs icon-effect">
@@ -416,12 +416,12 @@
                 <div class="row align-items-center mt-5 pt-lg-5 gy-4">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="text-muted">
-                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;">Kelebihan</h5>
-                            <h4 class="mb-3">Mengapa Memilih Kami Untuk Konsultasi Bisnis Anda?</h4>
-                            <p class="mb-4 ff-secondary">Dengan memilih kami untuk konsultasi bisnis Anda, Anda akan mendapatkan akses ke sumber daya, keahlian, dan pengalaman yang diperlukan untuk membantu bisnis Anda tumbuh dan berkembang.</p>
+                            <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;" data-aos="zoom-in-up">Kelebihan</h5>
+                            <h4 class="mb-3" data-aos="zoom-out-up">Mengapa Memilih Kami Untuk Konsultasi Bisnis Anda?</h4>
+                            <p class="mb-4 ff-secondary" data-aos="zoom-in">Dengan memilih kami untuk konsultasi bisnis Anda, Anda akan mendapatkan akses ke sumber daya, keahlian, dan pengalaman yang diperlukan untuk membantu bisnis Anda tumbuh dan berkembang.</p>
 
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5" data-aos="flip-left" data-aos-easing="ease-out-cubic">
                                     <div class="vstack gap-2">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 me-2">
@@ -487,13 +487,13 @@
                 <div class="row align-items-center gy-4">
                     <div class="col-sm">
                         <div>
-                            <h4 class="text-white mb-0 fw-semibold">Kembangkan Bisnis Anda Bersama SNAPBIZ</h4>
+                            <h4 class="text-white mb-0 fw-semibold" data-aos="zoom-in-right">Kembangkan Bisnis Anda Bersama SNAPBIZ</h4>
                         </div>
                     </div>
                     <!-- end col -->
                     <div class="col-sm-auto">
                         <div>
-                            <a href="https://wa.link/bvvuib" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Hubungi Sekarang</a>
+                            <a href="https://wa.link/bvvuib" data-aos="zoom-in-left" target="_blank" class="btn bg-gradient btn-info"><i class="ri-whatsapp-fill align-middle me-1"></i> Hubungi Sekarang</a>
                         </div>
                     </div>
                     <!-- end col -->
@@ -510,14 +510,14 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
-                            <h3 class="mb-3 fw-semibold">Proses Kerja Kami</h3>
-                            <p class="text-muted mb-4 ff-secondary">Konsultan bisnis adalah seorang profesional yang memberikan nasihat dan bantuan ahli kepada organisasi dalam berbagai aspek operasinya untuk membantu mereka meningkatkan efisiensi, produktivitas, dan profitabilitas.</p>
+                            <h3 class="mb-3 fw-semibold" data-aos="fade-up">Proses Kerja Kami</h3>
+                            <p class="text-muted mb-4 ff-secondary" data-aos="fade-up">Konsultan bisnis adalah seorang profesional yang memberikan nasihat dan bantuan ahli kepada organisasi dalam berbagai aspek operasinya untuk membantu mereka meningkatkan efisiensi, produktivitas, dan profitabilitas.</p>
                         </div>
                     </div>
                 </div>
                 <!-- end row -->
 
-                <div class="row text-center">
+                <div class="row text-center" data-aos="zoom-out-down">
                     <div class="col-lg-4">
                         <div class="process-card mt-4">
                             <div class="process-arrow-img d-none d-lg-block">
@@ -581,30 +581,30 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="text-muted">
-                            <div class="avatar-sm icon-effect mb-4">
+                            <div class="avatar-sm icon-effect mb-4" data-aos="zoom-in">
                                 <div class="avatar-title bg-transparent rounded-circle text-success h1">
                                     <i class="ri-star-fill fs-36" style="color: #f9b333"></i>
                                 </div>
                             </div>
-                            <h3 class="mb-3 fs-20">Pengalaman & Kolaborasi</h3>
-                            <p class="mb-4 ff-secondary fs-16">Pengalaman kami menangani audit eksternal dan internal serta menyiapkan laporan keuangan untuk berbagai jenis perusahaan, mulai dari perbankan, sekuritas, ritel, transportasi, logistik, perdagangan, manufaktur, jasa dan lain-lain.</p>
+                            <h3 class="mb-3 fs-20" data-aos="zoom-in-up">Pengalaman & Kolaborasi</h3>
+                            <p class="mb-4 ff-secondary fs-16" data-aos="zoom-out-up">Pengalaman kami menangani audit eksternal dan internal serta menyiapkan laporan keuangan untuk berbagai jenis perusahaan, mulai dari perbankan, sekuritas, ritel, transportasi, logistik, perdagangan, manufaktur, jasa dan lain-lain.</p>
                             <div class="row pt-3">
                                 <div class="col-3">
                                     <div class="text-center">
-                                        <h4>15+ Thn</h4>
-                                        <p>Pengalaman</p>
+                                        <h4 data-aos="flip-left" data-aos-easing="ease-out-cubic">15+ Thn</h4>
+                                        <p data-aos="flip-left" data-aos-easing="ease-out-cubic">Pengalaman</p>
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="text-center">
-                                        <h4>50+</h4>
-                                        <p>Klien</p>
+                                        <h4 data-aos="flip-left" data-aos-easing="ease-out-cubic">50+</h4>
+                                        <p data-aos="flip-left" data-aos-easing="ease-out-cubic">Klien</p>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="text-center">
-                                        <h4>10</h4>
-                                        <p>Mitra & Audit</p>
+                                        <h4 data-aos="flip-left" data-aos-easing="ease-out-cubic">10</h4>
+                                        <p data-aos="flip-left" data-aos-easing="ease-out-cubic">Mitra & Audit</p>
                                     </div>
                                 </div>
                             </div>
@@ -628,7 +628,7 @@
                             <h5 class="fs-20" data-aos="fade-down">Total lebih dari 50 Klien</h5>
 
                             <!-- Swiper -->
-                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
+                            <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr" data-aos="zoom-in">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="client-images">
