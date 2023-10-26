@@ -121,7 +121,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-5">
-                            <h1 class="mb-3 ff-secondary fw-semibold lh-base" data-aos="fade-up">Mitrakan Kami dalam Pertumbuhan Bisnismu</h1>
+                            <h1 class="mb-3 ff-secondary fw-semibold lh-base" data-aos="fade-up">Percayakan Kami dalam Pertumbuhan Bisnismu</h1>
                             <p class="text-muted" data-aos="fade-up">Kami adalah mitra terpercaya yang akan membantu Anda mencapai tingkat keunggulan. Dengan pengalaman luas dalam analisis data, strategi pemasaran, dan manajemen operasional, kami akan membantu Anda mencapai tujuan bisnis Anda. Dapatkan solusi yang disesuaikan dengan kebutuhan Anda hari ini.</p>
                         </div>
                     </div>
@@ -256,7 +256,7 @@
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="text-muted">
                             <h5 class="fs-12 text-uppercase" style="color: #38bbe5;font-weight: bold;" data-aos="zoom-in-up">Sistem</h5>
-                            <h4 class="mb-3" data-aos="zoom-out-up">Pengalaman Akuntansi</h4>
+                            <h4 class="mb-3" data-aos="zoom-out-up">Berpengalaman dalam Implementasi Sistem Akuntansi</h4>
                             <p class="mb-4 ff-secondary" data-aos="zoom-in">Proses terstruktur dan serangkaian prosedur yang digunakan oleh organisasi untuk mengelola data, transaksi, dan informasi keuangan mereka.</p>
 
                             <div class="row">
