@@ -1,0 +1,13 @@
+.polygon {
+    background-image: url("../images/bg-polygon-2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.client-images img {
+    max-height: 61px;
+    width: auto;
+    margin: 12px auto;
+    transition: all .4s;
+}
